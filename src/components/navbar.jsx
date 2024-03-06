@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoClose} from "react-icons/io5";
-import '../style/global.css';
+import '../style/navbar.css';
 import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
     <div className="container">
-    <nav>
+    <nav className="nav">
       <Link to="/">
       <img src='/logo/dynamics.png' className='App-logo' alt="logo" />
       </Link>
@@ -25,7 +25,7 @@ export default function NavBar() {
         </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/about">Home</NavLink>
+          <NavLink to="/home">Home</NavLink>
         </li>
         <li>
           <NavLink to="/services">Services</NavLink>
