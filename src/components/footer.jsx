@@ -1,7 +1,7 @@
 import React from "react";  
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../style/footer.css'
 const Footer = () => {
   return (
