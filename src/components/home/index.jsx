@@ -1,7 +1,7 @@
 import NavBar from '../navbar';
 import Footer from '../footer';
 import CarouselComponent from './carousel';
-import ServicesComponent from './services';
+import ServicesComponent from '../service/services';
 
 function Home() { 
     return (

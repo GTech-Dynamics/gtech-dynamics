@@ -28,7 +28,7 @@ const CarouselComponent = ({ slides }) => {
         backgroundImage: `url(${Image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: `cover`,
-        height: "500px",
+        height: "600px",
         width: "100%",
         justifyContent: 'center',
         alignItems: 'center',
@@ -54,6 +54,7 @@ const CarouselComponent = ({ slides }) => {
                 height: '100%',
                 textAlign: 'center',
                 padding: '100px',
+                animation: 'slideFromBottom 1.5s forwards, fadeIn 1.5s forwards',
                 }}
             >
                 <Typography variant='h2'>{item.name}</Typography>
