@@ -1,0 +1,16 @@
+.service-card {
+    transition: transform 3.5s ease, background-color 3.5s ease, color 3.5s ease;
+    transform-origin: bottom;
+    height: 300px;
+    padding: 7px;
+}
+
+.service-card:hover {
+    background-image: linear-gradient(to top, rgba(137, 207, 240, 0.5) 0%, rgba(0, 71, 171, 0.7) 100%);
+    color: #fff; 
+    transform: scaleY(1.0); 
+}
+
+.service-card:hover .MuiSvgIcon-root {
+    fill: #fff; 
+}
