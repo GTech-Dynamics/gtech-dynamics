@@ -14,3 +14,11 @@
 .service-card:hover .MuiSvgIcon-root {
     fill: #fff; 
 }
+@keyframes fadeIn {
+    from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0); 
+      }
+  }

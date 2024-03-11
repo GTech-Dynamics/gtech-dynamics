@@ -89,7 +89,7 @@ const ServicesComponent = ({ slides }) => {
        <Grid container spacing={2} justifyContent="center" sx={{margin: '5px'}}>
                 {items.map((item, index) => (
                     <Grid item xs={12} sm={6} md={4} key={index}>
-                        <Card className="service-card">
+                        <Card className="service-card" sx={{boxShadow: 5 }}>
                             <CardContent sx={{ textAlign: 'center', padding: '30px' }}>
                                 {React.cloneElement(item.icon, { style: { fontSize: 70 } })}
                                 <Typography variant="h5" component="h2" gutterBottom sx={{margin:'5px'}}>
