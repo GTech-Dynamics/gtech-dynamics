@@ -1,11 +1,9 @@
-import NavBar from './components/navbar';
-import Footer from './components/footer';
+import Home from './components/home/index';
 import './style/global.css'
 function App() {
   return (
     <>
-      <NavBar />
-      <Footer />
+      <Home />
     </> 
   );
 }
