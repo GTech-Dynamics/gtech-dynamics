@@ -5,6 +5,7 @@ import Services from "../src/components/service/index";
 import Portfolio from "../src/components/portfolio/index";
 import NavBar from '../src/components/navbar';
 import Footer from '../src/components/footer';
+import Contact from './components/contact';
 function App() {
   return (
     <>
@@ -16,7 +17,7 @@ function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/about-us" element={<Home />} />
-                <Route path="/contact-us" element={<Home />} />
+                <Route path="/contact-us" element={<Contact />} />
             </Routes>
         <Footer />
   </BrowserRouter>

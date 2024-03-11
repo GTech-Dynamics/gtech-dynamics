@@ -1,11 +1,11 @@
 .footer {
-    top:15px;
-    position: relative;
-    bottom: 0;
-    width: 99%;
-    background-color: #f8f9fa; 
-    padding: 20px 0;
-  }
+  position: relative;
+  top: 15px;
+  bottom: 0;
+  width:99%;
+  background-color: #f8f9fa; 
+  padding: 20px 0;
+}
 .nav-link{
     text-decoration: none;
 }

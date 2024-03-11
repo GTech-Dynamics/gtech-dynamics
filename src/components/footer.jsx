@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 import '../style/footer.css';
+import { Container, Box} from '@mui/material';
+
 const Footer = () => {
   return (
-    
       <footer className="footer">
         <div className="row">
           <div className="col-md-5 col-sm-12 d-flex flex-column align-items-center text-center p-3">
