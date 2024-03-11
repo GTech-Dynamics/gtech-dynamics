@@ -1,11 +1,9 @@
-import NavBar from '../navbar';
-import Footer from '../footer';
 import { Box, Typography} from '@mui/material';
 import Image from '../../static/images/service_bg.avif';
+import PortfolioComponent from './PortfolioComponent';
 function Portfolio() { 
     return (
       <>
-      <NavBar />
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -21,7 +19,7 @@ function Portfolio() {
         <Typography variant='h2'>Projects We Conquered & Delivered Unparalleled Success</Typography>
         </Box>
       </Box>
-        <Footer />
+      <PortfolioComponent />
       </> 
     );
   }

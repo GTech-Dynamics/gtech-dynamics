@@ -1,12 +1,9 @@
-import NavBar from '../navbar';
-import Footer from '../footer';
 import { Box, Typography, Button} from '@mui/material';
 import ServicesComponent from './services';
 import Image from '../../static/images/service_bg.avif';
 function Service() { 
     return (
       <>
-      <NavBar />
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -24,7 +21,6 @@ function Service() {
         </Box>
       </Box>
         <ServicesComponent/>
-        <Footer />
       </> 
     );
   }

@@ -1,0 +1,23 @@
+.portfolio-card {
+    transform-origin: bottom;
+    height: 300px;
+    padding: 7px;
+}
+
+.card-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    box-sizing: border-box;
+    transition: bottom 0.1s, opacity 0.3s; 
+    opacity: 0;
+}
+
+.portfolio-card:hover .card-content {
+    bottom: 0;
+    opacity: 1;
+}
