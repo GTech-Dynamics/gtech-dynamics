@@ -38,22 +38,12 @@ const PortfolioComponent = () => {
         }
       });
 
-          return (
-    <Container sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '50px',
-    }}>
-       <StyledHeading variant="h6" sx={{padding: '1px'}}>Projects</StyledHeading> 
-       <Typography variant='h4' sx={{ fontWeight: 'bold', padding: '5px' }}>Our Portfolio</Typography> 
-       <Box sx={{
-                width: '60%',
-                padding: '10px'
-            }}
-        >
-            <Typography variant='body1' sx={{ textAlign: 'center' }}>
+    return (
+    <Container className='child2'>
+       <Typography variant="h6" className='styled-heading'>Projects</Typography> 
+       <Typography variant='h4'>Our Portfolio</Typography> 
+       <Box>
+            <Typography variant='p'>
             Our portfolio displays the strength of our skilled IT team. 
             Check out the list of our projects and the success we delivered to our client's business.
             </Typography>
