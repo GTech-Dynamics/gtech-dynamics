@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, Button} from '@mui/material';
 import { ArrowForward }  from '@mui/icons-material'; 
 import Carousel from 'react-material-ui-carousel';
-import CarousalWrapper from 'react-material-ui-carousel';
 import { Link } from 'react-router-dom';
 import '../../style/home.css';
 
@@ -23,24 +22,23 @@ const CarouselComponent = ({ slides }) => {
 ];
   return (
     <Box className="parent">
-        <CarousalWrapper className='carousal-wrapper'>
           <Carousel className='carousal' autoPlay={false}>
             {items.map((item, i) => (
               <Box className="carousal-items ">
                 <Typography variant='h2'>{item.name}</Typography>
-                <Typography variant="p" sx={{margin: '15px'}}>{item.description}</Typography>
+                <Typography variant="p">{item.description}</Typography>
                 <Box className="buttons-container">
-                    <Button variant="outlined" endIcon={<ArrowForward  color="white"/>} size="large" component={Link} to="/about-us" className='btn'>
+                    <Button variant="outlined" endIcon={<ArrowForward  color="white"/>} size="large" component={Link} to="/about-us" className='button'>
                         About Us
                     </Button>
-                    <Button variant="outlined" endIcon={<ArrowForward color="white"/>} size="large" component={Link} to="/contact-us"  className='btn'>
+                    <Button variant="outlined" endIcon={<ArrowForward color="white"/>} size="large" component={Link} to="/contact-us"  className='button'>
                         Contact Us
                     </Button>
                 </Box>
               </Box>
             ))}
           </Carousel>
-        </CarousalWrapper>
+        {/* </CarousalWrapper> */}
     </Box>
   );
 };

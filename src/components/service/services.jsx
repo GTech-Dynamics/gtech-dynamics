@@ -42,7 +42,7 @@ const ServicesComponent = () => {
        <Typography variant='h4' className='styled-heading'>SERVICES</Typography> 
        <Typography variant='h4'>Services We Provide</Typography> 
        <Box className="child2">
-            <Typography variant='p'>
+            <Typography variant='body1'>
                 Gtech Dynamics is a client-focused company that focuses on providing the best IT 
                 services. Let the professionals handle the heavy work for you. Our top priority is to provide industry-leading
                 solutions and products adhering to market standards while ensuring only the in-demand standard 
@@ -50,16 +50,16 @@ const ServicesComponent = () => {
             </Typography>
        </Box> 
 
-       <Grid container spacing={2} className=''>
+       <Grid container spacing={2} className='grid'>
                 {items.map((item, index) => (
                     <Grid item xs={12} sm={6} md={4} key={index}>
                         <Card className="service-card">
                             <CardContent  className='service-card-content'>
                                 {React.cloneElement(item.icon, { style: { fontSize: 70 } })}
-                                <Typography variant="h5" component="h2" gutterBottom sx={{margin:'5px'}}>
+                                <Typography variant="h5" component="h2" gutterBottom>
                                     {item.heading}
                                 </Typography>
-                                <Typography variant="body2" component="p" sx={{marginTop:'30px'}}>
+                                <Typography variant="body2" component="p">
                                     {item.description}
                                 </Typography>
                             </CardContent>
