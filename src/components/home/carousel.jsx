@@ -2,10 +2,9 @@ import React from 'react';
 import { Box, Typography, Button} from '@mui/material';
 import { ArrowForward }  from '@mui/icons-material'; 
 import Carousel from 'react-material-ui-carousel';
-import Image from '../../static/images/carousal_background.jpg';
 import CarousalWrapper from 'react-material-ui-carousel';
 import { Link } from 'react-router-dom';
-
+import '../../style/home.css';
 
 const CarouselComponent = ({ slides }) => {
   var items = [
@@ -23,59 +22,24 @@ const CarouselComponent = ({ slides }) => {
     }
 ];
   return (
-    <Box 
-       sx={{
-        backgroundImage: `url(${Image})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: `cover`,
-        height: "600px",
-        width: "100%",
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-        <CarousalWrapper sx={{ 
-            height: "100%",
-            backdropFilter: 'blur(5px)',
-            }}
-        >
-        <Carousel sx={{
-            width: '100%',
-            height: '100%',
-        }}
-        autoPlay={false}
-        >
-          {items.map((item, i) => (
-            <Box sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '100%',
-                textAlign: 'center',
-                padding: '100px',
-                animation: 'slideFromBottom 1.5s forwards, fadeIn 1.5s forwards',
-                }}
-            >
+    <Box className="parent">
+        <CarousalWrapper className='carousal-wrapper'>
+          <Carousel className='carousal' autoPlay={false}>
+            {items.map((item, i) => (
+              <Box className="carousal-items ">
                 <Typography variant='h2'>{item.name}</Typography>
                 <Typography variant="p" sx={{margin: '15px'}}>{item.description}</Typography>
-
-            <Box sx={{
-                display: 'flex',
-                gap: '10px',
-                marginTop: '15px',
-                }}
-            >
-                <Button variant="outlined" endIcon={<ArrowForward  color="white"/>} size="large" style={{ backgroundColor: 'white', color: 'black' }} component={Link} to="/about-us">
-                    About Us
-                </Button>
-                <Button variant="outlined" endIcon={<ArrowForward color="white"/>} size="large" style={{ backgroundColor: 'white', color: 'black' }} component={Link} to="/contact-us">
-                    Contact Us
-                </Button>
-            </Box>
-        </Box>
-          ))}
-        </Carousel>
+                <Box className="buttons-container">
+                    <Button variant="outlined" endIcon={<ArrowForward  color="white"/>} size="large" component={Link} to="/about-us" className='btn'>
+                        About Us
+                    </Button>
+                    <Button variant="outlined" endIcon={<ArrowForward color="white"/>} size="large" component={Link} to="/contact-us"  className='btn'>
+                        Contact Us
+                    </Button>
+                </Box>
+              </Box>
+            ))}
+          </Carousel>
         </CarousalWrapper>
     </Box>
   );

@@ -8,39 +8,39 @@ export default function NavBar() {
 
   return (
     <div className="container">
-    <nav className="nav">
-      <Link to="/">
-      <img src='/logo/dynamics.png' className='App-logo' alt="logo" />
-      </Link>
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-      {menuOpen ? (
-            <IoClose />
-          ) : (
-            <>
-              <span></span>
-              <span></span>
-              <span></span>
-            </>
-          )}
+      <nav className="nav">
+        <Link to="/">
+        <img src='/logo/dynamics.png' className='App-logo' alt="logo" />
+        </Link>
+        <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? (
+              <IoClose />
+            ) : (
+              <>
+                <span></span>
+                <span></span>
+                <span></span>
+              </>
+            )}
         </div>
-      <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <NavLink to="/home">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/services">Services</NavLink>
-        </li>
-        <li>
-          <NavLink to="/portfolio">Portfolio</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about-us">About Us</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact-us">Contact Us</NavLink>
-        </li>
-      </ul>
-    </nav>
+        <ul className={menuOpen ? "open" : ""}>
+          <li>
+            <NavLink to="/home">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/portfolio">Portfolio</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about-us">About Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact-us">Contact Us</NavLink>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };

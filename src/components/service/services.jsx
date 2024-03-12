@@ -1,35 +1,9 @@
 import React from 'react';
 import {Container, Typography, Box, Card, CardContent, Grid} from '@mui/material';
-import { styled } from '@mui/styles';
 import '../../style/service.css';
 import { WebOutlined } from '@mui/icons-material';
 
-const ServicesComponent = ({ slides }) => {
-    const StyledHeading = styled(Typography)({
-        fontFamily: 'sans-serif',
-        margin: '100px auto',
-        color: '#black',
-        textAlign: 'center',
-        fontSize: '30px',
-        maxWidth: '600px',
-        position: 'relative',
-        '&:before, &:after': {
-          content: '""',
-          display: 'block',
-          width: '50px',
-          height: '3px',
-          background: '#191970',
-          position: 'absolute',
-          top: '50%',
-        },
-        '&:before': {
-          left: -60,
-        },
-        '&:after': {
-          right: -60,
-        }
-      });
-
+const ServicesComponent = () => {
       const items = [
         {
         'icon': <WebOutlined />,
@@ -64,21 +38,11 @@ const ServicesComponent = ({ slides }) => {
       
     ]
     return (
-    <Container sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '100px',
-    }}>
-       <StyledHeading variant="h6" sx={{padding: '5px'}}>SERVICES</StyledHeading> 
-       <Typography variant='h4' sx={{ fontWeight: 'bold', padding: '5px' }}>Services We Provide</Typography> 
-       <Box sx={{
-                width: '60%',
-                padding: '10px'
-            }}
-        >
-            <Typography variant='body1' sx={{ textAlign: 'center' }}>
+    <Container className='child1'>
+       <Typography variant='h4' className='styled-heading'>SERVICES</Typography> 
+       <Typography variant='h4'>Services We Provide</Typography> 
+       <Box className="child2">
+            <Typography variant='p'>
                 Gtech Dynamics is a client-focused company that focuses on providing the best IT 
                 services. Let the professionals handle the heavy work for you. Our top priority is to provide industry-leading
                 solutions and products adhering to market standards while ensuring only the in-demand standard 
@@ -86,11 +50,11 @@ const ServicesComponent = ({ slides }) => {
             </Typography>
        </Box> 
 
-       <Grid container spacing={2} justifyContent="center" sx={{margin: '5px'}}>
+       <Grid container spacing={2} className=''>
                 {items.map((item, index) => (
                     <Grid item xs={12} sm={6} md={4} key={index}>
-                        <Card className="service-card" sx={{boxShadow: 5 }}>
-                            <CardContent sx={{ textAlign: 'center', padding: '30px' }}>
+                        <Card className="service-card">
+                            <CardContent  className='service-card-content'>
                                 {React.cloneElement(item.icon, { style: { fontSize: 70 } })}
                                 <Typography variant="h5" component="h2" gutterBottom sx={{margin:'5px'}}>
                                     {item.heading}

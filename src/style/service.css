@@ -1,10 +1,82 @@
+.service-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(../static/images/carousal_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-top: 20px;
+}
+
+.child1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    margin: auto;
+}
+.child1 > * {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.child2 {
+    width: '60%';
+    padding: '10px';
+}
+.child2 > * {
+    margin-top: 50px;
+    text-align: center; 
+    color:black;
+}
+.child3 {
+    width: 60%;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    animation: fadeIn 1.5s forwards;
+}
+.styled-heading {
+    font-family: sans-serif;
+    margin-left: 100px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.styled-heading::before,
+.styled-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #191970;
+    position: absolute;
+    top: 50%;
+}
+
+.styled-heading::before {
+    left: 420px;
+}
+
+.styled-heading::after {
+    right: 420px;
+}
+.grid {
+    margin: '5px';
+    justify-content: "center";
+}
 .service-card {
     transition: transform 3.5s ease, background-color 3.5s ease, color 3.5s ease;
     transform-origin: bottom;
     height: 300px;
     padding: 7px;
+    box-shadow: 5;
 }
-
 .service-card:hover {
     background-image: linear-gradient(to top, rgba(137, 207, 240, 0.5) 0%, rgba(0, 71, 171, 0.7) 100%);
     color: #fff; 
@@ -13,6 +85,10 @@
 
 .service-card:hover .MuiSvgIcon-root {
     fill: #fff; 
+}
+.service-card-content {
+    text-align: center;
+    padding: '30px';
 }
 @keyframes fadeIn {
     from {
