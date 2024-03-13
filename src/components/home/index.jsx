@@ -1,15 +1,12 @@
-import NavBar from '../navbar';
-import Footer from '../footer';
 import CarouselComponent from './carousel';
 import ServicesComponent from '../service/services';
-
+import PortfolioComponent from '../portfolio/PortfolioComponent';
 function Home() { 
     return (
       <>
-        <NavBar />
         <CarouselComponent/>
         <ServicesComponent/>
-        <Footer />
+        <PortfolioComponent/>
       </> 
     );
   }
