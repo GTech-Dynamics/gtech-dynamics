@@ -1,0 +1,67 @@
+.contact-parent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.contact-child1{
+    width: 80%;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+.contact-styled-heading {
+    font-family: sans-serif;
+    margin-left: 100px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.contact-styled-heading::before,
+.contact-styled-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #191970;
+    position: absolute;
+    top: 50%;
+}
+
+.contact-styled-heading::before {
+    left:380px;
+}
+
+.contact-styled-heading::after {
+    right: 380px;
+}
+.contact-parent .parent-grid {
+    margin-top: 80px;
+    padding:5px;
+}
+.child-grid1{
+    margin-top: 80px;
+    text-align: left;
+}
+.child-grid1 .MuiBox-root {
+    margin-top: 10px;
+}
+.child-grid2{
+    border-radius: 15px;
+    color: white;
+    padding: 45px;
+    background-color: black;
+}
+.custom-textfield {
+    background-color: white;
+    border-radius: 5px;
+}
+.form-button{
+    background-color:red;
+    color: black;
+    margin: 20px;
+    font-weight: bold;
+}
