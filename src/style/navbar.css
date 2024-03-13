@@ -1,93 +1,37 @@
-.App-logo {
-    height: 5vmin;
-    pointer-events: none;
-    margin-left: 5px;
-  }
-.active{
-    background-color: #1d4ed8;
-    color:white;
+.appbar {
+  background-color: white !important;
+  color: black;
+  size: 100px;
 }
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    margin-top: 2px;
-    position: sticky;
-    
-}
-nav ul {
-    display: flex;
+.tab {
+  text-transform: none;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black !important;
+  text-decoration: none;
+  display: inline-flex;
+  font-weight: bold !important;
 }
 
-nav ul li {
-   list-style: none; 
+.tab:hover,
+.tab.active {
+  color: #1b155e !important;
+}
+.drawer {
+  width: 0;
+  transition: width 0.5s ease-in-out;
 }
 
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    border-radius: 0.5rem;
+.drawer-paper {
+  width: 250px;
+  box-sizing: border-box;
 }
 
-nav ul li a:not(.active):hover {
-    background-color:#1d4ed8 ;
-    color:white;
+.drawer-open {
+  width: 250px;
 }
-
-nav .menu {
-    display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-}
-
-nav .menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: black;
-    border-radius: 0.2rem;
-}
-
-@media (max-width: 670px) {
-    nav .menu {
-        display: flex;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 90%;
-        margin-bottom: 0.25rem;
-    }
-    .App-logo { 
-        margin-top:10px; 
-        height: 5vmin;
-        pointer-events: none;
-        margin-left: -150px;
-      }
-    nav ul.open {
-        display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        margin: 0.2rem 0.5rem;
-    }
+.listitem {
+  color: black;
+  font-weight: bold;
 }
