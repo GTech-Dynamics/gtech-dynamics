@@ -13,15 +13,15 @@ const PortfolioComponent = () => {
 
     return (
     <Container className='child2'>
-       <Typography variant="h6" className='styled-heading'>Projects</Typography> 
+       <Typography variant="h6" className='styled-portfolio-heading'>Projects</Typography>  
        <Typography variant='h4'>Our Portfolio</Typography> 
-       <Box>
+       <Box className="desc">
             <Typography variant='p'>
             Our portfolio displays the strength of our skilled IT team. 
             Check out the list of our projects and the success we delivered to our client's business.
             </Typography>
-       </Box> 
-       <Box className='inner-child2'>
+       </Box>
+       <Box>
           <Tabs value={value} onChange={handleChange} centered>
             <Tab label="All" />
             <Tab label="Custom Application" />

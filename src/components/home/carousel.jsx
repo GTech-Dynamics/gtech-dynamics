@@ -28,10 +28,10 @@ const CarouselComponent = ({ slides }) => {
                 <Typography variant='h2'>{item.name}</Typography>
                 <Typography variant="p">{item.description}</Typography>
                 <Box className="buttons-container">
-                    <Button variant="outlined" endIcon={<ArrowForward  color="white"/>} size="large" component={Link} to="/about-us" className='button'>
+                    <Button variant="outlined" endIcon={<ArrowForward  color="white"/>} size="large" component={Link} to="/about-us" className='carousal-button'>
                         About Us
                     </Button>
-                    <Button variant="outlined" endIcon={<ArrowForward color="white"/>} size="large" component={Link} to="/contact-us"  className='button'>
+                    <Button variant="outlined" endIcon={<ArrowForward color="white"/>} size="large" component={Link} to="/contact-us"  className='carousal-button'>
                         Contact Us
                     </Button>
                 </Box>

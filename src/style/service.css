@@ -11,7 +11,7 @@
     padding-top: 20px;
 }
 
-.child1 {
+.inner-child1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,21 +19,24 @@
     padding: 100px;
     margin: auto;
 }
-.child1 > * {
-    margin-top: 25px;
-    margin-bottom: 20px;
+.inner-child1 > * {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-.child2 {
-    width: '60%';
-    padding: '10px';
+.inner-child2 {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.child2 > * {
+.inner-child2 > * {
     margin-top: 50px;
-    text-align: center; 
+    width: 70%;
     color:black;
 }
 .child3 {
-    width: 60%;
+    width: 80%;
     text-align: center;
     color:white;
     font-weight: bold;

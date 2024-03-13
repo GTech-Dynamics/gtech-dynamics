@@ -9,8 +9,8 @@
     height: 500px;
     padding-top: 15px;
 }
-.cild1{
-    width: 50%;
+.child1{
+    width: 80%;
     text-align: center;
     color:white;
     font-weight: bold;
@@ -18,6 +18,7 @@
 }
 .child1 > * {
     color:white;
+    text-align: center;
     animation: fadeIn 1.5s forwards;
 }
 .child2 {
@@ -34,11 +35,7 @@
     justify-content: center;
 }
 
-.child2 > .inner-child2 {
-    width: 100%;
-}
-
-.styled-heading {
+.styled-portfolio-heading {
     font-family: sans-serif;
     margin-left: 100px;
     color: black;
@@ -47,8 +44,8 @@
     position: relative;
 }
 
-.styled-heading::before,
-.styled-heading::after {
+.styled-portfolio-heading::before,
+.styled-portfolio-heading::after {
     content: '';
     display: block;
     width: 50px;
@@ -58,11 +55,11 @@
     top: 50%;
 }
 
-.styled-heading::before {
+.styled-portfolio-heading::before {
     left: 420px;
 }
 
-.styled-heading::after {
+.styled-portfolio-heading::after {
     right: 420px;
 }
 .portfolio-card {
@@ -90,6 +87,18 @@
     opacity: 0.3s; 
     padding: 30px;
     
+}
+.desc {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc  > * {
+    margin-top: 50px;
+    width: 70%;
+    color:black;
 }
 .typography {
     color: white; 

@@ -38,17 +38,17 @@ const ServicesComponent = () => {
       
     ]
     return (
-    <Container className='child1'>
-       <Typography variant='h4' className='styled-heading'>SERVICES</Typography> 
-       <Typography variant='h4'>Services We Provide</Typography> 
-       <Box className="child2">
-            <Typography variant='body1'>
-                Gtech Dynamics is a client-focused company that focuses on providing the best IT 
-                services. Let the professionals handle the heavy work for you. Our top priority is to provide industry-leading
-                solutions and products adhering to market standards while ensuring only the in-demand standard 
-                practices of the IT industry as utilized.
-            </Typography>
-       </Box> 
+    <Container className='inner-child1'>
+      <Typography variant='h4' className='styled-heading'>SERVICES</Typography> 
+      <Typography variant='h4'>Services We Provide</Typography> 
+      <Box className="inner-child2">
+           <Typography variant='body1'>
+               Gtech Dynamics is a client-focused company that focuses on providing the best IT 
+               services. Let the professionals handle the heavy work for you. Our top priority is to provide industry-leading
+               solutions and products adhering to market standards while ensuring only the in-demand standard 
+               practices of the IT industry as utilized.
+           </Typography>
+      </Box> 
 
        <Grid container spacing={2} className='grid'>
                 {items.map((item, index) => (
