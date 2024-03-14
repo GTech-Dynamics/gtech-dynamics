@@ -24,18 +24,18 @@ const Footer = () => {
         <div className="col-md-4 col-sm-12 d-flex flex-column align-items-center text-center p-3">
           <div className="container " id="container">
             <div className="row">
-              <div className="col-auto">
+              <div className="col-auto pr-0">
                 <PhoneIcon />
               </div>
-              <div className="col">
+              <div className="col pl-1">
                 <p>+92 303 4086984</p>
               </div>
             </div>
             <div className="row">
-              <div className="col-auto">
+              <div className="col-auto pr-0">
                 <EmailIcon className="mr-2" />
               </div>
-              <div className="col">
+              <div className="col pl-0">
                 <p>info@gtech-dynamics.com</p>
               </div>
             </div>

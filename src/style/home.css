@@ -1,39 +1,103 @@
 .parent {
-    background-image: url(../static/images/carousal_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  background-image: url(../static/images/carousal_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 .carousal {
-    /* position: absolute;  */
-    top: -50;
-    left: 0;
-    width: 100%;
-    align-items: center;
-    height: 100%;
-    backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 .carousal-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-    padding: 100px;
-    color:white;
-    animation: slideFromBottom 1.5s forwards, fadeIn 1.5s forwards;            
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 70%;
+  top: 1%;
+  left: 15%;
+  position: absolute;
+  padding: 100px;
+  color: white;
+  animation: slideFromBottom 1.5s forwards, fadeIn 1.5s forwards;
 }
-.buttons-container { 
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+  width: 50%;
 }
 .carousal-button {
-    background-color: white;
-    color: black;
+  width: 400px !important;
+  background-color: white !important;
+  color: black !important;
+}
+.custom-next-icon {
+  color: white;
+  transition: color 0.3s;
+}
+.custom-prev-icon {
+  color: white;
+  transition: color 0.3s;
+}
+.carousal .MuiButtonBase-root {
+  width: 50px;
+  height: 50px;
+}
+
+.css-1abc02a > button {
+  right: 50px;
+}
+.css-hn784z > button {
+  left: 50px;
+}
+
+.carousal .css-1abc02a > button:hover,
+.carousal .css-hn784z > button:hover {
+  background-color: #116dad !important;
+}
+.carousal:hover .css-1abc02a > button {
+  right: 0;
+}
+
+.carousal:hover .css-hn784z > button {
+  left: 0;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white !important;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(45deg, #116dad, #1b155e);
+}
+@media (max-width: 768px) {
+  .parent {
+    height: auto;
+  }
+  .carousal {
+    padding: 20px;
+  }
+  .carousal .MuiButtonBase-root {
+    display: none;
+  }
+  .carousal-items {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }

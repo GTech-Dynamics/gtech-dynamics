@@ -18,6 +18,9 @@
 .tab.active {
   color: #1b155e !important;
 }
+.activeTab {
+  color: #1b155e !important;
+}
 .drawer {
   width: 0;
   transition: width 0.5s ease-in-out;
@@ -34,4 +37,45 @@
 .listitem {
   color: black;
   font-weight: bold;
+}
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  animation: slideInOverlay 1s forwards;
+}
+
+/* .overlay.open {
+  opacity: 1; 
+} */
+.overlay.close {
+  animation: slideOutOverlay 2.5s forwards;
+}
+
+@keyframes slideInOverlay {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutOverlay {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
