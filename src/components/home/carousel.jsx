@@ -1,47 +1,33 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { ArrowForward } from "@mui/icons-material";
 import Carousel from "react-material-ui-carousel";
 import "../../style/home.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useMediaQuery } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
-const CarouselComponent = ({ slides }) => {
-  const isMediumScreen = useMediaQuery("(max-width: 768px)");
-  var items = [
-    {
-      name: "Best It Solutions Company In The Global Community ",
-      description:
-        "We are a highly client-centric company that uses industry-leading best practices, cutting-edge tools &amp; technologies to ensure that you receive the highest quality services for…",
-    },
-    {
-      name: "To Our Upcoming Buisness Partners And Clients",
-      description:
-        "We are a highly client-centric company that uses industry-leading best practices, cutting-edge tools &amp; technologies to ensure that you receive the highest quality services for…",
-    },
-    {
-      name: "Best It Solutions And Buisness Services In Tech Market",
-      description:
-        "We are a highly client-centric company that uses industry-leading best practices, cutting-edge tools &amp; technologies to ensure that you receive the highest quality services for…",
-    },
-  ];
-  const navigate = useNavigate();
+import { CarousalItems } from "./items";
 
-  const handleClick = (page) => {
+const CarouselComponent = () => {
+  const isMediumScreen = useMediaQuery("(max-width: 768px)");
+  const navigate = useNavigate();
+  const handleButtonClick = (page) => {
     if (page === "about") {
       navigate("/about-us");
     } else {
       navigate("/contact-us");
     }
   };
+
   return (
-    <Box className="parent">
+    <Box className="carousal-parent">
       <Carousel
         className="carousal"
-        autoPlay={false}
+        autoPlay={isMediumScreen}
         navButtonsAlwaysVisible="true"
         animation="fade"
+        showDots="true"
+        transitionDuration={300}
         NextIcon={
           isMediumScreen ? null : (
             <ArrowForwardIcon fontSize="large" className="custom-next-icon" />
@@ -53,23 +39,38 @@ const CarouselComponent = ({ slides }) => {
           )
         }
       >
-        {items.map((item, i) => (
-          <Box className="carousal-items ">
-            <Typography variant="h2">{item.name}</Typography>
-            <Typography variant="p">{item.description}</Typography>
-            <Box className="buttons-container">
-              <button className="btn" onClick={() => handleClick("about")}>
-                <span>
-                  <b>About Us</b>
-                </span>
-                <span>{<ArrowForward color="white" />}</span>
-              </button>
-              <button className="btn" onClick={() => handleClick("contact")}>
-                <span>
-                  <b>Contact Us</b>
-                </span>
-                <span>{<ArrowForward color="white" />}</span>
-              </button>
+        {CarousalItems.map((item, i) => (
+          <Box
+            key={i}
+            className="carousal-item"
+            sx={{ backgroundImage: item.background }}
+          >
+            <Box className="carousal-body">
+              <Box className="carousal-content">
+                <Typography className="hr-lines">{item.header}</Typography>
+                <Typography variant="h3">{item.name}</Typography>
+                <Typography variant="body1">{item.description}</Typography>
+                <Box className="buttons-container">
+                  <button
+                    className="btn"
+                    onClick={() => handleButtonClick("about")}
+                  >
+                    <span>
+                      <b>About Us</b>
+                    </span>
+                    <span>{<ArrowForwardIcon color="white" />}</span>
+                  </button>
+                  <button
+                    className="btn"
+                    onClick={() => handleButtonClick("contact")}
+                  >
+                    <span>
+                      <b>Contact Us</b>
+                    </span>
+                    <span>{<ArrowForwardIcon color="white" />}</span>
+                  </button>
+                </Box>
+              </Box>
             </Box>
           </Box>
         ))}

@@ -20,7 +20,7 @@ function Contact() {
   });
 
   useEffect(() => {
-    document.title = "Contact Us - gtechdynamics";
+    document.title = "Contact Us - Gtech Dynamics";
   }, []);
 
   return (

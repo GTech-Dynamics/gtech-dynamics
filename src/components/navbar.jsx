@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import {
   AppBar,
@@ -13,25 +13,21 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../style/navbar.css";
+
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [overlayOpen, setOverlayOpen] = useState(false);
   const [overlayClosing, setOverlayClosing] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
-
-  const handleMenuToggle = () => {
+  const [activeTab, setActiveTab] = useState(-1);
+  useEffect(() => {
+    setActiveTab(1);
+  }, []);
+  const handleMenuOpen = () => {
     if (!menuOpen) {
       setOverlayOpen(true);
       setTimeout(() => {
         setMenuOpen(true);
       }, 1000);
-    } else {
-      setMenuOpen(false);
-      setOverlayClosing(true);
-      setTimeout(() => {
-        setOverlayOpen(false);
-        setOverlayClosing(false);
-      }, 1500);
     }
   };
 
@@ -51,18 +47,23 @@ export default function NavBar() {
       <AppBar className="appbar">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img src="/favicon-32x32.png" alt="logo" />
+            <img
+              src="/logo/android-chrome-192x192.png"
+              alt="logo"
+              width="100px"
+              height="100px"
+            />
           </Typography>
           <IconButton
             color="black"
             aria-label="menu"
-            onClick={handleMenuToggle}
-            sx={{ display: { xs: "block", md: "none" } }}
+            onClick={handleMenuOpen}
+            className="menu-icon"
           >
             <MenuIcon />
           </IconButton>
           <Tabs
-            sx={{ display: { xs: "none", md: "flex" }, marginLeft: "auto" }}
+            className="tabs"
             value={activeTab}
             onChange={(event, newValue) => setActiveTab(newValue)}
             indicatorColor="secondary"
@@ -74,7 +75,7 @@ export default function NavBar() {
               label="Home"
               component={NavLink}
               to="/home"
-              className={activeTab === 0 ? "tab activeTab" : "tab"}
+              className="tab"
               key="home"
             />
             <Tab
@@ -111,10 +112,7 @@ export default function NavBar() {
       <Toolbar />
 
       {overlayOpen && (
-        <div
-          onClick={handleMenuClose}
-          className={`overlay ${overlayClosing ? "closing" : ""}`}
-        />
+        <div className={`overlay ${overlayClosing ? "closing" : ""}`} />
       )}
 
       <Drawer
@@ -130,9 +128,11 @@ export default function NavBar() {
         }}
       >
         <Box className="drawer-header">
-          <IconButton onClick={handleMenuClose}>
-            <CloseIcon />
-          </IconButton>
+          <Box className="drawer-close-icon">
+            <IconButton onClick={handleMenuClose}>
+              <CloseIcon />
+            </IconButton>
+          </Box>
         </Box>
         <Tab label="Home" component={NavLink} to="/home" className="tab" />
         <Tab
