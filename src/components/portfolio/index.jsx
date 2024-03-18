@@ -8,9 +8,9 @@ function Portfolio() {
   }, []);
   return (
     <>
-      <Box className="parent">
-        <Box className="child1">
-          <Typography variant="h2">
+      <Box className="portfolio-parent">
+        <Box className="portfolio-header">
+          <Typography variant="h5">
             Projects We Conquered & Delivered Unparalleled Success
           </Typography>
         </Box>
