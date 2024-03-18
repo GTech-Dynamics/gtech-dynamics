@@ -1,18 +1,19 @@
 .footer {
-    top:15px;
-    position: relative;
-    bottom: 0;
-    width: 99%;
-    background-color: #f8f9fa; 
-    padding: 20px 0;
-  }
-.nav-link{
-    text-decoration: none;
+  top: 15px;
+  position: relative;
+  bottom: 0;
+  width: 99%;
+  background-color: black;
+  padding: 20px 0;
+  color: white;
 }
-#container{
-    width:70%;
+.nav-link {
+  text-decoration: none;
 }
-.footer-logo { 
-    margin-top:10px; 
-    height: 5vmin;
-  }
+#container {
+  width: 70%;
+}
+.footer-logo {
+  margin-top: 10px;
+  height: 5vmin;
+}

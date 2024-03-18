@@ -1,93 +1,103 @@
-.App-logo {
-    height: 5vmin;
-    pointer-events: none;
-    margin-left: 5px;
+.appbar {
+  background-color: white !important;
+  color: black;
+  size: 100px;
+}
+.tabs {
+  margin-left: auto;
+  display: flex;
+}
+.tab {
+  text-transform: none;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black !important;
+  text-decoration: none;
+  display: inline-flex;
+  font-weight: bold !important;
+}
+
+.tab:hover,
+.tab.active {
+  color: #116dad !important;
+}
+.activeTab {
+  color: #116dad !important;
+}
+.drawer {
+  width: 0;
+  transition: width 0.5s ease-in-out;
+  padding-top: 5px;
+}
+.drawer-paper {
+  width: 250px;
+  box-sizing: border-box;
+  color: black !important;
+}
+.drawer-open {
+  width: 250px;
+}
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.drawer-close-icon {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-right: 5px;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  animation: slideInOverlay 1s forwards;
+}
+.menu-icon {
+  display: none !important;
+}
+.menu-icon:hover {
+  background-color: transparent !important;
+}
+.overlay.close {
+  animation: slideOutOverlay 2.5s forwards;
+}
+
+@keyframes slideInOverlay {
+  from {
+    transform: translateX(-100%);
   }
-.active{
-    background-color: #1d4ed8;
-    color:white;
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    margin-top: 2px;
-    position: sticky;
-    
-}
-nav ul {
-    display: flex;
+  to {
+    transform: translateX(0);
+  }
 }
 
-nav ul li {
-   list-style: none; 
+@keyframes slideOutOverlay {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    border-radius: 0.5rem;
-}
-
-nav ul li a:not(.active):hover {
-    background-color:#1d4ed8 ;
-    color:white;
-}
-
-nav .menu {
-    display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-}
-
-nav .menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: black;
-    border-radius: 0.2rem;
-}
-
-@media (max-width: 670px) {
-    nav .menu {
-        display: flex;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 90%;
-        margin-bottom: 0.25rem;
-    }
-    .App-logo { 
-        margin-top:10px; 
-        height: 5vmin;
-        pointer-events: none;
-        margin-left: -150px;
-      }
-    nav ul.open {
-        display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        margin: 0.2rem 0.5rem;
-    }
+@media (max-width: 900px) {
+  .tabs {
+    display: none !important;
+  }
+  .menu-icon {
+    display: block !important;
+  }
 }
