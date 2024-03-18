@@ -26,7 +26,7 @@ function Contact() {
   return (
     <Box className="contact-parent">
       <Box className="contact-child1">
-        <Typography variant="h4">Code Graphers - Contact Us Page</Typography>
+        <Typography variant="h4">Gtech Dynamics - Contact Us Page</Typography>
         <Typography variant="h6" className="contact-styled-heading">
           CONTACT US
         </Typography>
