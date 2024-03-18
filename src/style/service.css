@@ -1,103 +1,166 @@
 .service-parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-image: url(../static/images/carousal_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url(../static/images/services_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 20px;
 }
-
+.service-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+  margin: auto;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+.body-child1 {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  margin-bottom: 10px;
+}
+.body-child1 > * {
+  padding: 15px;
+}
 .inner-child1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 100px;
-    margin: auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
-.inner-child1 > * {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.service-header {
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
 }
-.inner-child2 {
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header-content {
+  position: relative;
+  height: 80%;
+  width: 80%;
+  top: 50px;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  animation: slideFromBottom 1.5s forwards, fadeIn 1.5s forwards;
 }
-.inner-child2 > * {
-    margin-top: 50px;
-    width: 70%;
-    color:black;
+.service-hr-lines {
+  font-family: sans-serif;
+  color: #1b155e;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  max-width: 500px;
+  text-align: center;
 }
-.child3 {
-    width: 80%;
-    text-align: center;
-    color:white;
-    font-weight: bold;
-    animation: fadeIn 1.5s forwards;
+.service-hr-lines:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  background: #1b155e;
 }
-.styled-heading {
-    font-family: sans-serif;
-    margin-left: 100px;
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-}
-
-.styled-heading::before,
-.styled-heading::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #191970;
-    position: absolute;
-    top: 50%;
-}
-
-.styled-heading::before {
-    left: 420px;
-}
-
-.styled-heading::after {
-    right: 420px;
+.service-hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 50px;
+  background: #1b155e;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -40px;
 }
 .grid {
-    margin: '5px';
-    justify-content: "center";
+  margin: 0 auto;
+  justify-content: "center";
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.grid-item {
+  margin-bottom: 10px !important;
+}
+.card-heading {
+  font-weight: bold !important;
 }
 .service-card {
-    transition: transform 3.5s ease, background-color 3.5s ease, color 3.5s ease;
-    transform-origin: bottom;
-    height: 300px;
-    padding: 7px;
-    box-shadow: 5;
-}
-.service-card:hover {
-    background-image: linear-gradient(to top, rgba(137, 207, 240, 0.5) 0%, rgba(0, 71, 171, 0.7) 100%);
-    color: #fff; 
-    transform: scaleY(1.0); 
-}
-
-.service-card:hover .MuiSvgIcon-root {
-    fill: #fff; 
+  position: relative;
+  height: 300px;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(115, 155, 208, 0.5) !important;
+  border-radius: 20px !important;
 }
 .service-card-content {
-    text-align: center;
-    padding: '10px';
+  text-align: center;
+  padding: "10px";
 }
+.service-card-content > * {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.service-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(137, 207, 240, 0.5) 0%,
+    rgba(0, 71, 171, 0.7) 100%
+  );
+  height: 0;
+  transition: height 0.5s ease;
+}
+.service-card:hover .service-card-overlay {
+  height: 100%;
+}
+.service-card:hover .service-card-content {
+  color: white;
+}
+.service-card:hover .MuiSvgIcon-root {
+  fill: #fff;
+}
+
 @keyframes fadeIn {
-    from {
-        transform: translateY(100%);
-      }
-      to {
-        transform: translateY(0); 
-      }
+  from {
+    transform: translateY(100%);
   }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    height: 100%;
+  }
+}
