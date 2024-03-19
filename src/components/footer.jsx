@@ -1,67 +1,76 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Grid, Typography, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import "../style/footer.css";
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="row">
-        <div className="col-md-5 col-sm-12 d-flex flex-column align-items-center text-center p-3">
-          <div className="container imgcontainer">
-            <img src="/logo/dynamics.png" className="footer-logo " alt="logo" />
-          </div>
-          <br />
-          <h4>GTECH DYNAMICS</h4>
-          <p className="text-center">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-        </div>
-        <div className="col-md-4 col-sm-12 d-flex flex-column align-items-center text-center p-3">
-          <div className="container " id="container">
-            <div className="row">
-              <div className="col-auto pr-0">
-                <PhoneIcon />
-              </div>
-              <div className="col pl-1">
-                <p>+92 303 4086984</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-auto pr-0">
-                <EmailIcon className="mr-2" />
-              </div>
-              <div className="col pl-0">
-                <p>info@gtech-dynamics.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-12 d-flex flex-column align-items-center p-3">
-          <h5>Services</h5>
-          <NavLink to="/services" className="nav-link">
-            Services
-          </NavLink>
-          <NavLink to="/portfolio" className="nav-link">
-            Portfolio
-          </NavLink>
-          <h5 className="mt-3">Company</h5>
-          <NavLink to="/about-us" className="nav-link">
-            About Us
-          </NavLink>
-          <NavLink to="/contact-us" className="nav-link">
-            Contact Us
-          </NavLink>
-        </div>
-      </div>
-      <p className="text-center">
-        Copyright @ GTECH DYNAMICS All Right Reserved | Privacy Policy
-      </p>
-    </footer>
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      className="footer"
+    >
+      <Grid item md={5} xs={12} className="sections">
+        <Box className="img-container">
+          <img src="/logo/dynamics.png" className="footer-logo" alt="logo" />
+        </Box>
+        <br />
+        <Typography variant="h4" align="center">
+          GTECH DYNAMICS
+        </Typography>
+        <Typography variant="body1" align="center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </Typography>
+      </Grid>
+
+      <Grid item md={4} xs={12} className="section2">
+        <Grid container alignItems="center">
+          <Grid item xs={4} className="key">
+            <PhoneIcon className="icon" />
+          </Grid>
+          <Grid item xs={8} className="value">
+            <Typography variant="body1">+92 303 4086984</Typography>
+          </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={4} className="key">
+            <EmailIcon className="icon" />
+          </Grid>
+          <Grid item xs={8} className="value">
+            <Typography variant="body1">info@gtech-dynamics.com</Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item md={3} xs={12} className="sections">
+        <Typography variant="h5">Services</Typography>
+        <NavLink to="/services" className="nav-link">
+          Services
+        </NavLink>
+        <NavLink to="/portfolio" className="nav-link">
+          Portfolio
+        </NavLink>
+        <Typography variant="h5" className="mt-3">
+          Company
+        </Typography>
+        <NavLink to="/about-us" className="nav-link">
+          About Us
+        </NavLink>
+        <NavLink to="/contact-us" className="nav-link">
+          Contact Us
+        </NavLink>
+      </Grid>
+      <Grid item xs={12} className="copyright">
+        <Typography variant="body1">
+          Copyright @ GTECH DYNAMICS All Right Reserved | Privacy Policy
+        </Typography>
+      </Grid>
+    </Grid>
   );
 };
 
