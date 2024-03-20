@@ -29,11 +29,17 @@
 .section2 {
   margin-top: -105px !important;
   text-align: center;
-  padding-left: 35px !important;
   animation: floatFromRight 1s ease-in-out !important;
+}
+.section2 > * {
+  margin-top: 15px;
 }
 .section2 .value {
   text-align: left;
+}
+.section2 .key {
+  padding-left: 45px;
+  text-align: center;
 }
 .icon {
   color: #116dad;
@@ -50,18 +56,15 @@
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 897px) {
+@media screen and (max-width: 900px) {
   .sections {
     margin-top: 25px !important;
   }
   .section2 {
+    align-items: center;
     margin-top: 25px !important;
-    padding-left: 50px !important;
   }
   .section2 .key {
-    text-align: right;
-  }
-  .section2 .value {
-    text-align: center;
+    padding-left: 80px;
   }
 }

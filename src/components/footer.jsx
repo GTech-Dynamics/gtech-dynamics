@@ -31,18 +31,18 @@ const Footer = () => {
 
       <Grid item md={4} xs={12} className="section2">
         <Grid container alignItems="center">
-          <Grid item xs={4} className="key">
+          <Grid item xs={6} sm={5} className="key">
             <PhoneIcon className="icon" />
           </Grid>
-          <Grid item xs={8} className="value">
+          <Grid item xs={6} sm={7} className="value">
             <Typography variant="body1">+92 303 4086984</Typography>
           </Grid>
         </Grid>
         <Grid container>
-          <Grid item xs={4} className="key">
+          <Grid item xs={6} sm={5} className="key">
             <EmailIcon className="icon" />
           </Grid>
-          <Grid item xs={8} className="value">
+          <Grid item xs={6} sm={7} className="value">
             <Typography variant="body1">info@gtech-dynamics.com</Typography>
           </Grid>
         </Grid>
