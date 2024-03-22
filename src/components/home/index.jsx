@@ -1,5 +1,6 @@
 import CarouselComponent from "./carousel";
 import ServicesComponent from "../service/services";
+import { Box } from "@mui/material";
 import PortfolioComponent from "../portfolio/PortfolioComponent";
 import { useEffect } from "react";
 function Home() {
@@ -9,8 +10,12 @@ function Home() {
   return (
     <>
       <CarouselComponent />
-      <ServicesComponent />
-      <PortfolioComponent />
+      <Box className="service-component">
+        <ServicesComponent />
+      </Box>
+      <Box>
+        <PortfolioComponent />
+      </Box>
     </>
   );
 }

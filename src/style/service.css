@@ -77,26 +77,27 @@
   position: relative;
   max-width: 500px;
   text-align: center;
+  text-transform: uppercase !important;
 }
 .service-hr-lines:before {
   content: " ";
   display: block;
   height: 2px;
-  width: 50px;
+  width: 30px;
   position: absolute;
   top: 50%;
-  left: -40px;
+  left: -30px;
   background: #1b155e;
 }
 .service-hr-lines:after {
   content: " ";
   height: 2px;
-  width: 50px;
+  width: 30px;
   background: #1b155e;
   display: block;
   position: absolute;
   top: 50%;
-  right: -40px;
+  right: -30px;
 }
 .grid {
   margin: 0 auto;

@@ -46,7 +46,7 @@ const ServicesComponent = () => {
     <Box className="service-body">
       <Box className="body-child1">
         <Typography variant="p" className="service-hr-lines">
-          SERVICES
+          Services
         </Typography>
         <Typography variant="h3">Services We Provide</Typography>
         <Box className="inner-child1">
