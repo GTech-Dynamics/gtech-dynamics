@@ -47,7 +47,9 @@ const CarouselComponent = () => {
           >
             <Box className="carousal-body">
               <Box className="carousal-content">
-                <Typography className="hr-lines">{item.header}</Typography>
+                <Typography className="carousal-hr-lines">
+                  {item.header}
+                </Typography>
                 <Typography variant="h3">{item.name}</Typography>
                 <Typography variant="body1">{item.description}</Typography>
                 <Box className="buttons-container">

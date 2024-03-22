@@ -45,7 +45,7 @@ const ServicesComponent = () => {
   return (
     <Box className="service-body">
       <Box className="body-child1">
-        <Typography variant="p" className="service-hr-lines">
+        <Typography variant="p" className="hr-lines">
           Services
         </Typography>
         <Typography variant="h3">Services We Provide</Typography>
