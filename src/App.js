@@ -6,6 +6,7 @@ import Portfolio from "../src/components/portfolio/index";
 import Contact from "../src/components/contact/index";
 import NavBar from "../src/components/navbar";
 import Footer from "../src/components/footer";
+import AboutUs from "../src/components/about-us/index";
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +16,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/about-us" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
       <Footer />
