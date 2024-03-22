@@ -14,7 +14,7 @@ function Home() {
         <ServicesComponent />
       </Box>
       <Box>
-        <PortfolioComponent />
+        <PortfolioComponent home />
       </Box>
     </>
   );

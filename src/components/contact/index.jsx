@@ -18,27 +18,32 @@ function Contact() {
     message: "",
     agree: false,
   });
-
   useEffect(() => {
     document.title = "Contact Us - Gtech Dynamics";
   }, []);
 
   return (
-    <Box className="contact-parent">
-      <Box className="contact-child1">
-        <Typography variant="h4">Gtech Dynamics - Contact Us Page</Typography>
-        <Typography variant="h6" className="contact-styled-heading">
-          CONTACT US
-        </Typography>
-        <Typography variant="h2" sx={{ marginTop: "30px" }}>
-          Get In Touch With Us
-        </Typography>
-        <Typography>
-          Gtech Dynamics designs tailor-made software solutions and services for
-          businesses in all domains. Leave us a message if you have any
-          questions related to our services or how we work and we will get back
-          to you as soon as possible.
-        </Typography>
+    <>
+      <Box className="contact-body-child1">
+        <Box className="inner-child1">
+          <Typography variant="h4">Gtech Dynamics - Contact Us Page</Typography>
+          <Typography variant="h6" className="hr-lines">
+            CONTACT US
+          </Typography>
+          <Typography variant="h4" className="typography">
+            Get In Touch With Us
+          </Typography>
+          <Box className="inner-child2 ">
+            <Typography>
+              Gtech Dynamics designs tailor-made software solutions and services
+              for businesses in all domains. Leave us a message if you have any
+              questions related to our services or how we work and we will get
+              back to you as soon as possible.
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+      <Box className="contact-body-child2">
         <Grid container spacing={2} className="parent-grid">
           <Grid item xs={12} sm={12} md={4} className="child-grid1">
             <Typography variant="h4">Contact Us</Typography>
@@ -58,38 +63,38 @@ function Contact() {
                 <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
-                    label="First Name"
+                    placeholder="First Name"
                     name="firstName"
-                    required
                     className="custom-textfield"
+                    variant="filled"
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
-                    label="Last Name"
+                    placeholder="Last Name"
                     name="lastName"
-                    required
                     className="custom-textfield"
+                    variant="filled"
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
-                    label="Email"
+                    placeholder="Email"
                     name="email"
                     type="email"
-                    required
                     className="custom-textfield"
+                    variant="filled"
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
-                    label="Subject"
+                    placeholder="Subject"
                     name="subject"
-                    required
                     className="custom-textfield"
+                    variant="filled"
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -97,26 +102,25 @@ function Contact() {
                     fullWidth
                     multiline
                     rows={4}
-                    label="Message"
+                    placeholder="Message"
                     name="message"
-                    required
                     className="custom-textfield"
+                    variant="filled"
                   />
                 </Grid>
                 <Grid item xs={12} sx={{ color: "white", textAlign: "left" }}>
                   <FormControlLabel
                     control={
                       <Checkbox
-                        checked={formData.agree}
-                        name="agree"
-                        sx={{ color: "white" }}
-                        disabled={false}
+                        sx={{
+                          color: "white",
+                        }}
                       />
                     }
                     label="I agree to the terms and conditions"
+                    sx={{ color: "white" }}
                   />
                 </Grid>
-
                 <Button
                   type="submit"
                   variant="contained"
@@ -129,7 +133,7 @@ function Contact() {
           </Grid>
         </Grid>
       </Box>
-    </Box>
+    </>
   );
 }
 
