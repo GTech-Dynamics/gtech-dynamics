@@ -14,14 +14,15 @@ const Footer = () => {
       className="footer"
     >
       <Grid item md={5} xs={12} className="sections">
-        <Box className="img-container">
-          <img src="/logo/dynamics.png" className="footer-logo" alt="logo" />
+        <Box className="footer-logo">
+          <img
+            src="/logo/android-chrome-192x192.png"
+            alt="logo"
+            width="170px"
+            height="100px"
+          />
         </Box>
-        <br />
-        <Typography variant="h4" align="center">
-          GTECH DYNAMICS
-        </Typography>
-        <Typography variant="body1" align="center">
+        <Typography variant="body1" className="content">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -30,19 +31,19 @@ const Footer = () => {
       </Grid>
 
       <Grid item md={4} xs={12} className="section2">
-        <Grid container alignItems="center">
-          <Grid item xs={6} sm={5} className="key">
+        <Grid container spacing={2}>
+          <Grid item>
             <PhoneIcon className="icon" />
           </Grid>
-          <Grid item xs={6} sm={7} className="value">
+          <Grid item>
             <Typography variant="body1">+92 303 4086984</Typography>
           </Grid>
         </Grid>
-        <Grid container>
-          <Grid item xs={6} sm={5} className="key">
+        <Grid container spacing={2}>
+          <Grid item>
             <EmailIcon className="icon" />
           </Grid>
-          <Grid item xs={6} sm={7} className="value">
+          <Grid item>
             <Typography variant="body1">info@gtech-dynamics.com</Typography>
           </Grid>
         </Grid>

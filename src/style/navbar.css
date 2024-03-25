@@ -1,7 +1,7 @@
 .appbar {
-  background-color: white !important;
   color: black;
   size: 100px;
+  background-color: white !important;
 }
 .tabs {
   margin-left: auto;

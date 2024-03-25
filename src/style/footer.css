@@ -3,7 +3,7 @@
   position: relative;
   bottom: 0;
   background-color: black;
-  padding: 20px;
+  padding: 40px;
   color: white;
 }
 .nav-link {
@@ -12,40 +12,29 @@
 .nav-link:hover {
   color: #116dad;
 }
-.img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .footer-logo {
-  margin-top: 10px;
-  height: 5vmin;
+  margin-left: -25px !important;
 }
 .sections {
   animation: floatFromRight 1s ease-in-out !important;
-  align-items: center;
-  text-align: center;
+  text-align: left;
+}
+.sections .content {
+  padding-right: 20px;
 }
 .section2 {
-  margin-top: -105px !important;
-  text-align: center;
+  margin-top: -120px !important;
   animation: floatFromRight 1s ease-in-out !important;
 }
 .section2 > * {
-  margin-top: 15px;
-}
-.section2 .value {
-  text-align: left;
-}
-.section2 .key {
-  padding-left: 45px;
-  text-align: center;
+  margin-top: 10px;
+  padding-left: 30px;
 }
 .icon {
   color: #116dad;
 }
 .copyright {
-  margin-top: 20px !important;
+  margin-top: 40px !important;
   text-align: center;
 }
 @keyframes floatFromRight {
@@ -61,10 +50,9 @@
     margin-top: 25px !important;
   }
   .section2 {
-    align-items: center;
-    margin-top: 25px !important;
+    margin-top: 20px !important;
   }
-  .section2 .key {
-    padding-left: 80px;
+  .section2 > * {
+    padding-left: 0px;
   }
 }

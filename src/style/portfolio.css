@@ -127,4 +127,10 @@
   .portfolio-body-child2 .MuiTabs-flexContainer {
     flex-wrap: wrap !important;
   }
+  .portfolio-body-child2 {
+    padding: 20px;
+  }
+  .inner-child2 {
+    padding: 0px;
+  }
 }

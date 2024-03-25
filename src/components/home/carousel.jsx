@@ -30,12 +30,12 @@ const CarouselComponent = () => {
         transitionDuration={300}
         NextIcon={
           isMediumScreen ? null : (
-            <ArrowForwardIcon fontSize="large" className="custom-next-icon" />
+            <ArrowForwardIcon fontSize="medium" className="custom-next-icon" />
           )
         }
         PrevIcon={
           isMediumScreen ? null : (
-            <ArrowBackIcon className="custom-prev-icon" fontSize="large" />
+            <ArrowBackIcon className="custom-prev-icon" fontSize="medium" />
           )
         }
       >
