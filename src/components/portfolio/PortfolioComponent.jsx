@@ -33,7 +33,9 @@ const PortfolioComponent = (home) => {
     <>
       <Box className="portfolio-body-child1">
         <Box className="inner-child1">
-          <Typography className="hr-lines">Projects</Typography>
+          <Typography className="hr-lines" variant="p">
+            Projects
+          </Typography>
           <Typography variant="h4">Our Portfolio</Typography>
           <Box className="inner-child2 ">
             <Typography variant="body1">

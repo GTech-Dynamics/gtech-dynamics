@@ -20,11 +20,11 @@ const GridComponent = ({ items }) => {
                 variant="h5"
                 component="h2"
                 gutterBottom
-                className="typography"
+                className="card-heading"
               >
                 {item.heading}
               </Typography>
-              <Typography variant="body2" component="p" className="typography">
+              <Typography variant="body2" component="p" className="card-desc">
                 {item.description}
               </Typography>
               <IconButton

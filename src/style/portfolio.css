@@ -6,7 +6,7 @@
   background-image: url(../static/images/service_bg.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: var(--header-height);
   padding-top: 15px;
 }
 .portfolio-header {
@@ -46,7 +46,7 @@
   color: black;
 }
 .inner-child1 > * {
-  padding: 15px;
+  padding: 20px;
 }
 .inner-child2 {
   padding: 10px;
@@ -63,6 +63,7 @@
 .portfolio-body-child2 .MuiTab-root.Mui-selected {
   background-color: black;
   color: white;
+  font-weight: bold !important;
 }
 .portfolio-grid {
   margin-top: 5px !important;
@@ -91,10 +92,11 @@
   box-sizing: border-box;
   opacity: 0.3s;
   padding: 30px;
-}
-.typography {
   color: white;
   padding: 10px;
+}
+.card-heading {
+  font-family: var(--primary-font) !important;
 }
 .icon-button {
   background-color: black !important;
@@ -105,7 +107,10 @@
   bottom: 0;
   opacity: 1;
 }
-.portfolio-card:hover .typography {
+.portfolio-card:hover .card-heading {
+  animation: fadeIn 1.5s forwards;
+}
+.portfolio-card:hover .card-desc {
   animation: fadeIn 1.5s forwards;
 }
 .portfolio-card:hover .icon-button {
@@ -113,12 +118,13 @@
 }
 .button-container {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 25px !important;
 }
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
   color: white !important;
   background-color: black !important;
-  font-weight: bold !important;
+  text-transform: capitalize !important;
+  font-weight: var(--btn-weight) !important;
 }
 @media (max-width: 768px) {
   .portfolio-header > * {
@@ -127,10 +133,17 @@
   .portfolio-body-child2 .MuiTabs-flexContainer {
     flex-wrap: wrap !important;
   }
-  .portfolio-body-child2 {
-    padding: 20px;
+  .portfolio-body-child1 {
+    padding: 2px;
+  }
+  .inner-child1 > * {
+    padding: 10px !important;
   }
   .inner-child2 {
-    padding: 0px;
+    width: 100%;
+    padding: 14px !important;
+  }
+  .inner-child2 > * {
+    font-size: 18px !important;
   }
 }
