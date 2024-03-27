@@ -100,6 +100,13 @@ export default function NavBar() {
                 key="portfolio"
               />
               <Tab
+                label="Technology"
+                component={NavLink}
+                to="/technology"
+                className="tab"
+                key="technology"
+              />
+              <Tab
                 label="About Us"
                 component={NavLink}
                 to="/about-us"
@@ -152,6 +159,12 @@ export default function NavBar() {
             label="portfolio"
             component={NavLink}
             to="/portfolio"
+            className="tab"
+          />
+          <Tab
+            label="technology"
+            component={NavLink}
+            to="/technology"
             className="tab"
           />
           <Tab

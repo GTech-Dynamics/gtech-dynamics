@@ -43,7 +43,7 @@ const ServicesComponent = () => {
     },
   ];
   return (
-    <Box className="service-body">
+    <Box className="main-body">
       <Box className="body-child1">
         <Typography variant="p" className="hr-lines">
           Services

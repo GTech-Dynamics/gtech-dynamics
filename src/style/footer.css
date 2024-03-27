@@ -49,6 +49,10 @@
   .sections {
     margin-top: 25px !important;
   }
+  .sections > h5 {
+    font-size: 20px !important;
+    font-weight: 400px !important;
+  }
   .section2 {
     margin-top: 20px !important;
   }

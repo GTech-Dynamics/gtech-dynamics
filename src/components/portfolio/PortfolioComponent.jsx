@@ -31,12 +31,14 @@ const PortfolioComponent = (home) => {
 
   return (
     <>
-      <Box className="portfolio-body-child1">
-        <Box className="inner-child1">
-          <Typography className="hr-lines">Projects</Typography>
-          <Typography variant="h4">Our Portfolio</Typography>
-          <Box className="inner-child2 ">
-            <Typography variant="body1">
+      <Box className="main-body">
+        <Box className="body-child1">
+          <Typography className="hr-lines" variant="p">
+            Projects
+          </Typography>
+          <Typography variant="h3">Our Portfolio</Typography>
+          <Box className="inner-child1 ">
+            <Typography variant="p">
               Our portfolio displays the strength of our skilled IT team. Check
               out the list of our projects and the success we delivered to our
               client's business.
@@ -44,7 +46,7 @@ const PortfolioComponent = (home) => {
           </Box>
         </Box>
       </Box>
-      <Box className="portfolio-body-child2">
+      <Box className="body-child2">
         <Tabs
           value={value}
           onChange={handleChange}
@@ -52,6 +54,7 @@ const PortfolioComponent = (home) => {
           TabIndicatorProps={{
             style: { display: "none" },
           }}
+          className="portfolio-tab"
         >
           <Tab label="All" />
           <Tab label="Custom Application" />
