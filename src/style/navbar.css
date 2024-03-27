@@ -1,8 +1,3 @@
-* {
-  font-family: var(--secondary-font) !important;
-  font-weight: var(--secondary-font-weigth) !important;
-  letter-spacing: var(--secondary-letter-spacing) !important;
-}
 .appbar {
   color: black;
   size: 100px;

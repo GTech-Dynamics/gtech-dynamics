@@ -36,18 +36,6 @@
   color: white;
   animation: slideFromBottom 1.5s forwards, fadeIn 1.5s forwards;
 }
-.css-gepadz-MuiTypography-root {
-  font-family: var(--primary-font) !important;
-  font-weight: var(--primary-font-weight) !important;
-  letter-spacing: var(--primary-letter-spacing) !important;
-  font-size: var(--primary-font-size);
-}
-.css-ahj2mt-MuiTypography-root {
-  font-family: var(--secondary-font) !important;
-  font-weight: var(--secondary-font-weight) !important;
-  font-size: var(--secondary-font-size) !important;
-  letter-spacing: var(--secondary-letter-spacing) !important;
-}
 .carousal-content > * {
   margin: 35px 0px 0px 0px !important;
 }
@@ -98,8 +86,8 @@
   justify-content: center;
   background-color: white !important;
   color: #fff;
+  font-family: "Work Sans" !important;
   border: 1px solid white;
-  font-family: var(--secondary-font) !important;
   font-weight: var(--btn-weight) !important;
   border-radius: 4px;
   padding: 8px 16px;
@@ -111,10 +99,8 @@
   border: none;
 }
 .carousal-hr-lines {
-  font-family: sans-serif;
   color: white;
   text-align: center;
-  font-size: 30px;
   position: relative;
   max-width: 500px;
   margin: 100px auto;
@@ -164,14 +150,11 @@
   .carousal-content {
     width: 100%;
     height: 100%;
+    padding: 5px !important;
   }
   .carousal-content > h3 {
     font-size: 30px !important;
     font-weight: 500 !important;
     margin-bottom: 15px;
-  }
-  .carousal-content p {
-    font-size: 18px !important;
-    font-weight: 200 !important;
   }
 }

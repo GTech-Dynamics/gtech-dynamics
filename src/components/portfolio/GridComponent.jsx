@@ -16,15 +16,10 @@ const GridComponent = ({ items }) => {
             sx={{ backgroundImage: item.background }}
           >
             <CardContent className="card-content">
-              <Typography
-                variant="h5"
-                component="h2"
-                gutterBottom
-                className="card-heading"
-              >
+              <Typography variant="h5" gutterBottom className="card-heading">
                 {item.heading}
               </Typography>
-              <Typography variant="body2" component="p" className="card-desc">
+              <Typography variant="p" component="p" className="card-desc">
                 {item.description}
               </Typography>
               <IconButton

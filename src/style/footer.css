@@ -34,14 +34,8 @@
   margin-top: 40px !important;
   text-align: center;
 }
-.css-ag7rrr-MuiTypography-root {
-  letter-spacing: var(--primary-letter-spacing) !important;
-  font-family: var(--primary-font) !important;
-}
 .nav-link {
   text-decoration: none;
-  font-family: var(--secondary-font);
-  letter-spacing: var(--secondary-letter-spacing) !important;
 }
 @keyframes floatFromRight {
   from {
@@ -56,23 +50,12 @@
     margin-top: 25px !important;
   }
   .sections > h5 {
-    font-size: 25px !important;
+    font-size: 20px !important;
     font-weight: 400px !important;
   }
-  .sections > p {
-    font-size: 18px !important;
-  }
+
   .section2 {
     margin-top: 20px !important;
     margin-left: -60px !important;
-  }
-  .section2 p {
-    padding-left: 0px;
-    font-size: 18px !important;
-    font-weight: 200 !important;
-  }
-  .copyright p {
-    font-size: 18px !important;
-    font-weight: 200 !important;
   }
 }
