@@ -26,15 +26,15 @@ function Contact() {
     <>
       <Box className="contact-body-child1">
         <Box className="inner-child1">
-          <Typography variant="h4">Gtech Dynamics - Contact Us Page</Typography>
-          <Typography variant="h6" className="hr-lines">
+          <Typography variant="h3">Gtech Dynamics - Contact Us Page</Typography>
+          <Typography variant="p" className="hr-lines">
             CONTACT US
           </Typography>
-          <Typography variant="h4" className="typography">
+          <Typography variant="h3" className="typography">
             Get In Touch With Us
           </Typography>
           <Box className="inner-child2 ">
-            <Typography>
+            <Typography variant="p">
               Gtech Dynamics designs tailor-made software solutions and services
               for businesses in all domains. Leave us a message if you have any
               questions related to our services or how we work and we will get
@@ -46,14 +46,14 @@ function Contact() {
       <Box className="contact-body-child2">
         <Grid container spacing={2} className="parent-grid">
           <Grid item xs={12} sm={12} md={4} className="child-grid1">
-            <Typography variant="h4">Contact Us</Typography>
+            <Typography variant="h3">Contact Us</Typography>
             <Box>
               <Typography variant="h5">Phone</Typography>
-              <Typography>USA Number: +1 564 224 5720</Typography>
+              <Typography variant="p">USA Number: +1 564 224 5720</Typography>
             </Box>
             <Box>
               <Typography variant="h5">Email</Typography>
-              <Typography>info@gtechdynamics.com</Typography>
+              <Typography variant="p">info@gtechdynamics.com</Typography>
             </Box>
           </Grid>
 

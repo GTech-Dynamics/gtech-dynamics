@@ -10,7 +10,7 @@ function Service() {
       <Box className="service-parent">
         <Box className="service-header">
           <Box className="header-content">
-            <Typography variant="h2">
+            <Typography variant="h3">
               We Provide Custom Solutions According To Specific Buisness
               Requirements
             </Typography>

@@ -1,13 +1,14 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: black;
+:root {
+  --primary-color: #1b155e;
+  --secondary-color: #116dad;
+  --btn-weight: bold;
+  --header-height: 90vh;
 }
+
 .hr-lines {
-  font-family: sans-serif;
-  color: #1b155e;
+  color: var(--primary-color);
   text-align: center;
-  font-size: 14px;
+  font-size: 14px !important;
   position: relative;
   max-width: 500px;
   text-align: center;

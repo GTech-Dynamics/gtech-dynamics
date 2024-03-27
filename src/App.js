@@ -7,19 +7,23 @@ import Contact from "../src/components/contact/index";
 import NavBar from "../src/components/navbar";
 import Footer from "../src/components/footer";
 import AboutUs from "../src/components/about-us/index";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../src/components/theme";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <NavBar />
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

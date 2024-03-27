@@ -20,10 +20,10 @@
 
 .tab:hover,
 .tab.active {
-  color: #116dad !important;
+  color: var(--secondary-color) !important;
 }
 .activeTab {
-  color: #116dad !important;
+  color: var(--secondary-color) !important;
 }
 .drawer {
   width: 0;

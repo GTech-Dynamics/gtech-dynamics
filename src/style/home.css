@@ -1,5 +1,5 @@
 .carousal-parent {
-  height: 90vh;
+  height: var(--header-height);
 }
 .carousal {
   width: 100%;
@@ -63,7 +63,7 @@
 
 .carousal .css-1abc02a > button:hover,
 .carousal .css-hn784z > button:hover {
-  background-color: #116dad !important;
+  background-color: var(--secondary-color) !important;
 }
 .carousal:hover .css-1abc02a > button {
   right: 0;
@@ -86,7 +86,9 @@
   justify-content: center;
   background-color: white !important;
   color: #fff;
+  font-family: "Work Sans" !important;
   border: 1px solid white;
+  font-weight: var(--btn-weight) !important;
   border-radius: 4px;
   padding: 8px 16px;
   cursor: pointer;
@@ -97,10 +99,8 @@
   border: none;
 }
 .carousal-hr-lines {
-  font-family: sans-serif;
   color: white;
   text-align: center;
-  font-size: 30px;
   position: relative;
   max-width: 500px;
   margin: 100px auto;
@@ -150,5 +150,11 @@
   .carousal-content {
     width: 100%;
     height: 100%;
+    padding: 5px !important;
+  }
+  .carousal-content > h3 {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px;
   }
 }
