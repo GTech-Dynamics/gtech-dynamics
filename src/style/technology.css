@@ -1,0 +1,28 @@
+.technology-menu {
+  display: flex !important;
+  padding: 15px !important;
+}
+.technology-tabs {
+  border-right: 1 !important;
+  width: 50% !important;
+}
+.technology-tabs .css-tox4hb-MuiButtonBase-root-MuiTab-root {
+  align-items: flex-start !important;
+}
+.technology-menu .css-1g4ac1o-MuiTabs-root {
+  overflow: auto !important;
+}
+.technology-tabs .MuiTab-root.Mui-selected {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+.technology-tabpanel .css-19kzrtu {
+  padding: 0px 24px 0px 90px !important;
+}
+.technology-tabpanel .css-ahj2mt-MuiTypography-root {
+  align-items: left !important;
+  text-align: left !important;
+}

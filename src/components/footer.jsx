@@ -22,7 +22,7 @@ const Footer = () => {
             height="100px"
           />
         </Box>
-        <Typography variant="body1" className="content">
+        <Typography variant="p" className="content">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -36,7 +36,7 @@ const Footer = () => {
             <PhoneIcon className="icon" />
           </Grid>
           <Grid item>
-            <Typography variant="body1">+92 303 4086984</Typography>
+            <Typography variant="p">+92 303 4086984</Typography>
           </Grid>
         </Grid>
         <Grid container spacing={2}>
@@ -44,7 +44,7 @@ const Footer = () => {
             <EmailIcon className="icon" />
           </Grid>
           <Grid item>
-            <Typography variant="body1">info@gtech-dynamics.com</Typography>
+            <Typography variant="p">info@gtech-dynamics.com</Typography>
           </Grid>
         </Grid>
       </Grid>
@@ -67,7 +67,7 @@ const Footer = () => {
         </NavLink>
       </Grid>
       <Grid item xs={12} className="copyright">
-        <Typography variant="body1">
+        <Typography variant="p">
           Copyright @ GTECH DYNAMICS All Right Reserved | Privacy Policy
         </Typography>
       </Grid>

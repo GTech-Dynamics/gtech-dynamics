@@ -3,19 +3,19 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   typography: {
     h3: {
-      fontFamily: "Roboto, Open Sans",
+      fontFamily: "Barlow Condensed, Sans-Serif",
       fontWeight: 800,
     },
     h5: {
-      fontFamily: "Roboto, Open Sans",
+      fontFamily: "Barlow Condensed, Sans-Serif",
       fontWeight: 800,
     },
     p: {
-      fontFamily: "Work Sans",
+      fontFamily: "Roboto, Sans-Serif",
       fontWeight: 400,
     },
     button: {
-      fontFamily: "Work Sans",
+      fontFamily: "Roboto, Sans-Serif",
       fontWeight: 400,
     },
   },
