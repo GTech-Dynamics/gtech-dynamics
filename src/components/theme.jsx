@@ -4,11 +4,13 @@ const theme = createTheme({
   typography: {
     h3: {
       fontFamily: "Barlow Condensed, Sans-Serif",
-      fontWeight: 800,
+      fontWeight: 700,
+      letterSpacing: 1,
     },
     h5: {
       fontFamily: "Barlow Condensed, Sans-Serif",
-      fontWeight: 800,
+      fontWeight: 700,
+      letterSpacing: 1,
     },
     p: {
       fontFamily: "Roboto, Sans-Serif",

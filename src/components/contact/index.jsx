@@ -23,18 +23,18 @@ function Contact() {
   }, []);
 
   return (
-    <>
-      <Box className="contact-body-child1">
-        <Box className="inner-child1">
-          <Typography variant="h3">Gtech Dynamics - Contact Us Page</Typography>
+    <Box className="contact-parent">
+      <Box className="main-body">
+        <Box className="body-child1">
+          <Typography variant="h4">Gtech Dynamics - Contact Us Page</Typography>
           <Typography variant="p" className="hr-lines">
             CONTACT US
           </Typography>
           <Typography variant="h3" className="typography">
             Get In Touch With Us
           </Typography>
-          <Box className="inner-child2 ">
-            <Typography variant="p">
+          <Box className="inner-child1">
+            <Typography>
               Gtech Dynamics designs tailor-made software solutions and services
               for businesses in all domains. Leave us a message if you have any
               questions related to our services or how we work and we will get
@@ -133,7 +133,7 @@ function Contact() {
           </Grid>
         </Grid>
       </Box>
-    </>
+    </Box>
   );
 }
 

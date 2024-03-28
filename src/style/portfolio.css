@@ -10,7 +10,7 @@
   padding-top: 15px;
 }
 .portfolio-header {
-  max-width: 800px;
+  max-width: 900px;
   text-align: center;
   margin-top: 55px;
   color: white;
@@ -84,7 +84,7 @@
   text-align: center;
   margin-top: 25px !important;
 }
-.button-container .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+.button-container .css-u03qg1-MuiButtonBase-root-MuiButton-root {
   color: white !important;
   background-color: black !important;
   text-transform: capitalize !important;
@@ -95,7 +95,7 @@
     font-size: 36px !important;
     font-weight: 500 !important;
   }
-  .portfolio-body-child2 .MuiTabs-flexContainer {
+  .body-child2 .MuiTabs-flexContainer {
     flex-wrap: wrap !important;
   }
   .portfolio-body-child1 {

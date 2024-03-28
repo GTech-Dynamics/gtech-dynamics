@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import VerticalTabs from "./menu";
+import TechnologyGrid from "./GridComponent";
+import { All } from "./GridItems";
 
 function Technology() {
   return (
@@ -30,6 +32,7 @@ function Technology() {
           <VerticalTabs />
         </Box>
       </Box>
+      <TechnologyGrid items={All} />
     </>
   );
 }
