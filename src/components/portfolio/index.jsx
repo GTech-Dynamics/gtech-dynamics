@@ -10,7 +10,7 @@ function Portfolio() {
     <>
       <Box className="portfolio-parent">
         <Box className="portfolio-header">
-          <Typography variant="h5">
+          <Typography variant="h3">
             Projects We Conquered & Delivered Unparalleled Success
           </Typography>
         </Box>

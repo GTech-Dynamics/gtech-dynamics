@@ -50,7 +50,7 @@ const ServicesComponent = () => {
         </Typography>
         <Typography variant="h3">Services We Provide</Typography>
         <Box className="inner-child1">
-          <Typography variant="body1">
+          <Typography variant="p">
             Gtech Dynamics is a client-focused company that focuses on providing
             the best IT services. Let the professionals handle the heavy work
             for you. Our top priority is to provide industry-leading solutions
@@ -65,25 +65,20 @@ const ServicesComponent = () => {
             <Card className="service-card">
               <CardContent className="service-card-content">
                 {React.cloneElement(item.icon, { style: { fontSize: 70 } })}
-                <Typography
-                  variant="h5"
-                  component="h2"
-                  gutterBottom
-                  className="card-heading"
-                >
+                <Typography variant="h5" gutterBottom className="card-heading">
                   {item.heading}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="p" component="p">
                   {item.description}
                 </Typography>
               </CardContent>
               <Box className="service-card-overlay">
                 <CardContent className="service-card-content">
                   {React.cloneElement(item.icon, { style: { fontSize: 70 } })}
-                  <Typography variant="h5" component="h2" gutterBottom>
+                  <Typography variant="h5" gutterBottom>
                     {item.heading}
                   </Typography>
-                  <Typography variant="body2" component="p">
+                  <Typography variant="p" component="p">
                     {item.description}
                   </Typography>
                 </CardContent>

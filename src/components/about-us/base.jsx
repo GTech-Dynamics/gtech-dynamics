@@ -15,10 +15,10 @@ function AboutBase() {
 
       <Grid item xs={12} md={6} className="right">
         <Box className="right-child1">
-          <Typography className="title" variant="h6">
+          <Typography className="title" variant="p">
             About Us
           </Typography>
-          <Typography className="subtitle" variant="body1">
+          <Typography className="subtitle" variant="h3">
             We can take your business to the
             <span className="span"> next level.</span>
           </Typography>
@@ -33,7 +33,7 @@ function AboutBase() {
           </Typography>
         </Box>
         <Box className="right-child2">
-          <Typography>
+          <Typography variant="p">
             As of now, we are a team of 50+ Software Engineers & developers
             offering wide-ranging skills that can enhance the design and
             execution of any digital product development project. Our services
