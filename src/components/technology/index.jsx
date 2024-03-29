@@ -6,8 +6,8 @@ import { All } from "./GridItems";
 function Technology() {
   return (
     <>
-      <Box className="portfolio-parent">
-        <Box className="portfolio-header">
+      <Box className="parent">
+        <Box className="header">
           <Typography variant="h3">
             Leveraging Cutting-edge IT technologies To deliver innovate products
           </Typography>

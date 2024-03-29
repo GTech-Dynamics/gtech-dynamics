@@ -19,7 +19,6 @@ export const All = [
     logo: require("../../static/images/Oracle_Logo.jpg"),
     heading: "ORACLE",
   },
-
   {
     logo: require("../../static/images/angular.png"),
     heading: "Azngular",
@@ -40,7 +39,6 @@ export const All = [
     logo: require("../../static/images/vue.png"),
     heading: "Vue",
   },
-
   {
     logo: require("../../static/images/java.png"),
     heading: "Java",

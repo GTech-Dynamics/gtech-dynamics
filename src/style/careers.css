@@ -1,0 +1,32 @@
+.careers-grid {
+  padding: 0px 70px 10px 70px !important;
+}
+.careers-grid > * {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+}
+.careers-grid-child1 {
+  padding: 35px !important;
+}
+.careers-grid-child2 {
+  padding: 15px !important;
+}
+.careers-grid-child2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 20px !important;
+}
+.careers-grid-child2 img:hover,
+img:focus {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .careers-grid-child1 {
+    text-align: center !important;
+    padding: 10px !important;
+  }
+  .careers-grid-child2 {
+    margin-top: 10px !important;
+  }
+}
