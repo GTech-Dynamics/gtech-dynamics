@@ -1,5 +1,6 @@
 .technology-menu {
   display: flex !important;
+  flex-direction: row !important;
   padding: 15px !important;
 }
 .technology-tabs {
@@ -55,14 +56,44 @@
 .logo:focus {
   transform: scale(1.2);
 }
-@media (max-width: 768px) {
+.techbody-child2 {
+  padding: 40px;
+  width: 100% !important;
+}
+@media (max-width: 960px) {
   .technology-tabs {
     width: 50% !important;
+    overflow: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .technology-menu {
+    margin-top: 20px;
+    flex-direction: column !important;
+  }
+
+  .technology-tabs {
+    width: 100% !important;
   }
   .panel {
-    width: 50% !important;
+    margin-top: 10px !important;
+    width: 100% !important;
   }
-  .technology-tabpanel .css-19kzrtu {
-    padding: 15px 0px 0px 24px !important;
+  .technology-tabs .MuiTabs-flexContainer {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    padding: 5px !important;
+    justify-content: center !important;
+  }
+  .technology-tabs .MuiButtonBase-root {
+    width: 180px !important;
+    padding: 0px !important;
+    align-items: center !important;
+  }
+  .technology-tabs .MuiButtonBase-root.MuiTab-root.Mui-selected {
+    padding: 0px !important;
+  }
+  .techbody-child2 {
+    padding: 0px !important;
   }
 }
