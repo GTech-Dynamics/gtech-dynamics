@@ -107,6 +107,13 @@ export default function NavBar() {
                 key="technology"
               />
               <Tab
+                label="Careers"
+                component={NavLink}
+                to="/careers"
+                className="tab"
+                key="careers"
+              />
+              <Tab
                 label="About Us"
                 component={NavLink}
                 to="/about-us"
@@ -165,6 +172,12 @@ export default function NavBar() {
             label="technology"
             component={NavLink}
             to="/technology"
+            className="tab"
+          />
+          <Tab
+            label="careers"
+            component={NavLink}
+            to="/careers"
             className="tab"
           />
           <Tab

@@ -10,6 +10,7 @@ import AboutUs from "../src/components/about-us/index";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../src/components/theme";
 import Technology from "./components/technology";
+import Careers from "./components/careers";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/technology" element={<Technology />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
