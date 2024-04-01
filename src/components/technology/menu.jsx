@@ -5,9 +5,10 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "../../style/technology.css";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <div
       role="tabpanel"
@@ -44,11 +45,13 @@ export default function VerticalTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  console.log("small screen", isSmallScreen);
   return (
     <Box className="technology-menu">
       <Tabs
-        orientation="vertical"
+        orientation={isSmallScreen ? "horizontal" : "vertical"}
         className="technology-tabs"
         value={value}
         onChange={handleChange}

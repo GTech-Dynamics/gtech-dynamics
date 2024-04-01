@@ -64,3 +64,45 @@ export const All = [
     heading: "Android",
   },
 ];
+export const gridHome = [
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Coding Languages",
+    description:
+      "Python, Ruby, GoLang, Node, C#, Asp.Net, Java, PHP, Javascript, iOS, Android, HTML, HTML 5, TypeScript, JQuery, CSS / CSS3, C / C++",
+  },
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Database",
+    description:
+      "MySql / MariaDB, PostgreSQL, Cassandra, SqLite3, MongoDB, DynamoDB, Oracle 9i, Microsoft SQL Server, GraphQL",
+  },
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Caches & VK Stores",
+    description: "Redis, Mem-cache",
+  },
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Coding Languages",
+    description:
+      "Python, Ruby, GoLang, Node, C#, Asp.Net, Java, PHP, Javascript, iOS, Android, HTML, HTML 5, TypeScript, JQuery, CSS / CSS3, C / C++",
+  },
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Tools",
+    description:
+      "Microsoft Visual Studio, PyScharm, Go-land, Data-Grip, Eclipse IDE, Net Bean IDE, Php Storm, MATLAB, Sublime, Atom",
+  },
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Frontend Frameworks",
+    description: "ReactJS, Next.js, Nuxt.js, VueJS, AngularJS, BackboneJS",
+  },
+  {
+    logo: require("../../static/images/azure.jpg"),
+    heading: "Design",
+    description:
+      "Bootstrap 5, Semantic UI, Css/Css3, Tailwind, Vuetify, Material UI, Element UI",
+  },
+];
