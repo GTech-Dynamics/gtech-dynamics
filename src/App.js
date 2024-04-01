@@ -10,7 +10,7 @@ import AboutUs from "../src/components/about-us/index";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../src/components/theme";
 import Technology from "./components/technology";
-import Careers from "./components/careers";
+import Careers from "./components/careers/index";
 function App() {
   return (
     <BrowserRouter>
