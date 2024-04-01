@@ -14,7 +14,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink, useLocation } from "react-router-dom";
 import "../style/navbar.css";
 import ProgressBar from "./progress-bar";
-import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +21,6 @@ export default function NavBar() {
   const [overlayClosing, setOverlayClosing] = useState(false);
   const [activeTab, setActiveTab] = useState(-1);
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     setActiveTab(1);
