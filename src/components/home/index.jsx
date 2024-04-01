@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import TechnologyBase from "../technology/base";
 import TechnologyGrid from "../technology/GridComponent";
 import { gridHome } from "../technology/GridItems";
+import Talent from "../hire-talent/index";
 function Home() {
   useEffect(() => {
     document.title = "Home - Gtech Dynamics";
@@ -26,6 +27,9 @@ function Home() {
       <Box className="technology-component">
         <TechnologyBase subtitle={techSubTitle} description={techDescription} />
         <TechnologyGrid items={gridHome} home="true" />
+      </Box>
+      <Box id="hireTalentSection">
+        <Talent />
       </Box>
     </>
   );

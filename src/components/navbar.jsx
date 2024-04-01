@@ -14,6 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink, useLocation } from "react-router-dom";
 import "../style/navbar.css";
 import ProgressBar from "./progress-bar";
+import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,8 @@ export default function NavBar() {
   const [overlayClosing, setOverlayClosing] = useState(false);
   const [activeTab, setActiveTab] = useState(-1);
   const location = useLocation();
+  const navigate = useNavigate();
+
   useEffect(() => {
     setActiveTab(1);
   }, []);
@@ -33,7 +36,12 @@ export default function NavBar() {
       }, 1000);
     }
   };
-
+  const handleHireTalentClick = () => {
+    const hireTalentSection = document.getElementById("hireTalentSection");
+    if (hireTalentSection) {
+      hireTalentSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const handleMenuClose = () => {
     setMenuOpen(false);
     setTimeout(() => {
@@ -105,6 +113,12 @@ export default function NavBar() {
                 to="/technology"
                 className="tab"
                 key="technology"
+              />
+              <Tab
+                label="Hire Talent"
+                className="tab"
+                key="hire talent"
+                onClick={handleHireTalentClick}
               />
               <Tab
                 label="Careers"
