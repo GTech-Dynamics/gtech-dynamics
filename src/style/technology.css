@@ -49,23 +49,22 @@
 .home-grid {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
   text-align: center !important;
   width: 80% !important;
   margin: 0 auto !important;
 }
-.home-grid .main {
+.home-grid .child-grid {
   display: flex;
   height: 200px !important;
 }
-.home-grid .left .logo-container {
+.child-grid .left .logo-container {
   border: 1px solid black;
   border-radius: 70%;
   width: 50px;
   height: 50px;
   padding-top: 10px;
 }
-.home-grid .main .right {
+.home-grid .child-grid .right {
   text-align: left;
 }
 .logo {
@@ -83,19 +82,19 @@
   padding: 40px;
   width: 100% !important;
 }
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .technology-tabs {
     width: 50% !important;
     overflow: auto !important;
   }
-  .home-grid .main .left > * {
+  .home-grid .child-grid .left > * {
     margin: 0 auto;
   }
-  .home-grid .main .right {
-    margin-top: -35px;
+  .home-grid .child-grid .right {
+    margin-top: -20px;
     text-align: center;
   }
-  .home-grid .main .right > * {
+  .home-grid .child-grid .right > * {
     margin-bottom: 10px;
   }
 }
@@ -129,7 +128,7 @@
   .techbody-child2 {
     padding: 0px !important;
   }
-  .home-grid .main .left > * {
+  .home-grid .child-grid .left > * {
     margin: 0 auto;
   }
 }

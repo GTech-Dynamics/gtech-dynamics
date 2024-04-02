@@ -21,6 +21,7 @@ export default function NavBar() {
   const [overlayClosing, setOverlayClosing] = useState(false);
   const [activeTab, setActiveTab] = useState(-1);
   const location = useLocation();
+
   useEffect(() => {
     setActiveTab(1);
   }, []);
@@ -33,7 +34,12 @@ export default function NavBar() {
       }, 1000);
     }
   };
-
+  const handleHireTalentClick = () => {
+    const hireTalentSection = document.getElementById("hireTalentSection");
+    if (hireTalentSection) {
+      hireTalentSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const handleMenuClose = () => {
     setMenuOpen(false);
     setTimeout(() => {
@@ -105,6 +111,12 @@ export default function NavBar() {
                 to="/technology"
                 className="tab"
                 key="technology"
+              />
+              <Tab
+                label="Hire Talent"
+                className="tab"
+                key="hire talent"
+                onClick={handleHireTalentClick}
               />
               <Tab
                 label="Careers"

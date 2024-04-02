@@ -5,18 +5,16 @@ const TechnologyGrid = ({ items, home }) => {
       {home ? (
         <Grid container spacing={2} className="home-grid">
           {items.map((item, index) => (
-            <Grid item sm={12} md={6} lg={4} key={index} className="main">
+            <Grid item sm={12} md={6} lg={4} key={index} className="child-grid">
               <Grid container spacing={1}>
-                <Grid item xs={12} sm={12} md={4} key={index} className="left">
+                <Grid item xs={12} sm={12} md={3} key={index} className="left">
                   <Box className="logo-container">{item.logo}</Box>
                 </Grid>
                 <Grid item sm={12} md={8} key={index} className="right">
                   <Typography variant="p">
                     <b>{item.heading}</b>
                   </Typography>
-                  <Typography varaint="p" sx={{ color: "lightblack" }}>
-                    {item.description}
-                  </Typography>
+                  <Typography varaint="p">{item.description}</Typography>
                 </Grid>
               </Grid>
             </Grid>
