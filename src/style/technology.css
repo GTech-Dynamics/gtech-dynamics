@@ -50,12 +50,13 @@
   display: flex !important;
   align-items: center !important;
   text-align: center !important;
-  width: 80% !important;
+  width: 85% !important;
   margin: 0 auto !important;
 }
 .home-grid .child-grid {
   display: flex;
   height: 200px !important;
+  margin-bottom: 20px;
 }
 .child-grid .left .logo-container {
   border: 1px solid black;
@@ -66,6 +67,11 @@
 }
 .home-grid .child-grid .right {
   text-align: left;
+  color: #616669;
+  padding: 0px;
+}
+.home-grid .child-grid .right .heading {
+  color: black;
 }
 .logo {
   width: 90px !important;
