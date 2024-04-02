@@ -3,7 +3,7 @@ import VerticalTabs from "./menu";
 import TechnologyGrid from "./GridComponent";
 import TechnologyBase from "./base";
 import { All } from "./GridItems";
-
+import "../../style/technology.css";
 function Technology() {
   let subTitle = "Technologies We Utilize";
   let description =

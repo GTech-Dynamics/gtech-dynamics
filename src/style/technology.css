@@ -50,12 +50,16 @@
   display: flex !important;
   align-items: center !important;
   text-align: center !important;
-  width: 80% !important;
+  width: 90% !important;
   margin: 0 auto !important;
 }
 .home-grid .child-grid {
   display: flex;
   height: 200px !important;
+}
+.child-grid .left {
+  justify-content: right;
+  padding-left: 30px !important;
 }
 .child-grid .left .logo-container {
   border: 1px solid black;
@@ -67,6 +71,7 @@
 .home-grid .child-grid .right {
   text-align: left;
 }
+
 .logo {
   width: 90px !important;
   height: 90px !important;
@@ -78,6 +83,13 @@
 .logo:focus {
   transform: scale(1.2);
 }
+.child-grid .left .logo-container:hover,
+.child-grid .left .logo-container:focus {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+  border: 1px solid #116dad;
+}
+
 .techbody-child2 {
   padding: 40px;
   width: 100% !important;

@@ -4,7 +4,7 @@ import { items } from "./GridItems";
 
 const HireTalentGrid = () => {
   return (
-    <Grid container spacing={2} className="home-grid">
+    <Grid container spacing={2} className="home-hire-grid">
       {items.map((item, index) => (
         <Grid
           item

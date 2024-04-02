@@ -1,0 +1,86 @@
+.work-parent {
+  height: auto;
+  margin-top: 40px !important;
+  padding: 55px 0px 5px 0px;
+}
+.work-parent .child1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px !important;
+  padding-left: 25px !important;
+}
+.work-parent .child1 > * {
+  margin-bottom: 5px !important;
+  padding: 5px !important;
+}
+.work-parent .child1 .title {
+  font-family: sans-serif;
+  color: #1b155e;
+  font-size: 14px;
+  position: relative;
+  letter-spacing: 1px !important;
+  max-width: 400px;
+}
+.work-parent .child1 .title:after {
+  content: " ";
+  height: 2px;
+  width: 30px;
+  background: #1b155e;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 230px;
+}
+.work-parent .child1 .subtitle {
+  font-size: 40px !important;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  line-height: 1.3em;
+  color: #000;
+}
+.span {
+  color: var(--primary-color);
+}
+.work-parent .child1 .description {
+  line-height: 1.5 !important;
+  color: #616669 !important;
+}
+.work-parent .child1 .list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.work-parent .child1 .list .listitem {
+  display: list-item;
+}
+.MuiListItem-root::marker {
+  color: var(--primary-color) !important;
+  font-size: 25px !important;
+}
+.work-parent .child2 {
+  padding: 0px !important;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.work-parent .child2 .work-img {
+  border-radius: 8px 0px 0px 8px;
+  width: 100%;
+  height: 80% !important;
+}
+@media (max-width: 899px) {
+  .work-parent {
+    padding: 5px;
+  }
+  .work-parent .child1 {
+    margin: 10px !important;
+    height: auto;
+    padding: 10px !important;
+  }
+  .work-parent .child2 .img {
+    height: 100%;
+    border-radius: 8px !important;
+  }
+  .subtitle {
+    font-size: 18px !important;
+  }
+}

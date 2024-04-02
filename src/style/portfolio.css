@@ -1,3 +1,7 @@
+.portfolio-tab-parent {
+  background-color: white;
+  padding: 0px 10px 0px 10px;
+}
 .portfolio-tab .MuiTab-root.Mui-selected {
   background-color: black;
   color: white;
@@ -65,8 +69,12 @@
   font-weight: var(--btn-weight) !important;
 }
 @media (max-width: 768px) {
+  .body-child2 {
+    padding: 20px;
+  }
   .body-child2 .MuiTabs-flexContainer {
     flex-wrap: wrap !important;
+    padding: 0px;
   }
   .portfolio-body-child1 {
     padding: 2px;
