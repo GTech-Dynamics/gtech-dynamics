@@ -36,7 +36,9 @@ const Footer = () => {
             <PhoneIcon className="icon" />
           </Grid>
           <Grid item>
-            <Typography variant="p">+92 303 4086984</Typography>
+            <Typography variant="p" className="content">
+              +92 303 4086984
+            </Typography>
           </Grid>
         </Grid>
         <Grid container spacing={2}>
@@ -44,7 +46,9 @@ const Footer = () => {
             <EmailIcon className="icon" />
           </Grid>
           <Grid item>
-            <Typography variant="p">info@gtech-dynamics.com</Typography>
+            <Typography variant="p" className="content">
+              info@gtech-dynamics.com
+            </Typography>
           </Grid>
         </Grid>
       </Grid>
