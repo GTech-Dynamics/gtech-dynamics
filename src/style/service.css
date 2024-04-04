@@ -60,6 +60,14 @@
   margin-top: 10px;
   margin-bottom: 25px;
 }
+.service-overlay-content {
+  text-align: center;
+  padding: "10px";
+}
+.service-overlay-content > * {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
 .service-card-overlay {
   position: absolute;
   bottom: 0;
@@ -72,12 +80,20 @@
   );
   height: 0;
   transition: height 0.5s ease;
+  color: white !important;
+}
+.service-overlay-content > * {
+  color: white !important;
 }
 .service-card:hover .service-card-overlay {
   height: 100%;
+  color: white !important;
 }
-.service-card:hover .service-card-content {
-  color: white;
+.service-card:hover .service-overlay-content {
+  color: white !important;
+}
+.service-card:hover .service-card-content > * {
+  color: white !important;
 }
 .service-card:hover .MuiSvgIcon-root {
   fill: #fff;

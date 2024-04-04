@@ -72,7 +72,7 @@ const ServicesComponent = () => {
                 </Typography>
               </CardContent>
               <Box className="service-card-overlay">
-                <CardContent className="service-card-content">
+                <CardContent className="service-overlay-content">
                   {React.cloneElement(item.icon, { style: { fontSize: 70 } })}
                   <Typography variant="h5" gutterBottom>
                     {item.heading}
