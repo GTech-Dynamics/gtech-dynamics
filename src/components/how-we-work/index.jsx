@@ -19,8 +19,8 @@ function WorkBase() {
           <Typography variant="p" className="description">
             It’s a known fact that a business is the brainchild of its owner(s).
             We understand how important it is to streamline the workflow
-            processes of your business, so it operates seamlessly. Here at Code
-            Graphers, our professional teams take into account all your business
+            processes of your business, so it operates seamlessly. Here at Gtech
+            Dynamics, our professional teams take into account all your business
             requirements and concerns to develop a top-notch end-product that
             addresses all your business needs. It’s safe to say you take the
             right step by choosing Code Graphers. We guarantee to take your
