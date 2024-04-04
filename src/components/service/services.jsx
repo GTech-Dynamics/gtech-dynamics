@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Box, Card, CardContent, Grid } from "@mui/material";
-import "../../style/service.css";
 import { WebOutlined } from "@mui/icons-material";
 
 const ServicesComponent = () => {

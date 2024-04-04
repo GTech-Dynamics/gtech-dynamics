@@ -23,7 +23,7 @@ function WorkBase() {
             Dynamics, our professional teams take into account all your business
             requirements and concerns to develop a top-notch end-product that
             addresses all your business needs. It’s safe to say you take the
-            right step by choosing Code Graphers. We guarantee to take your
+            right step by choosing Gtech Dynamics. We guarantee to take your
             business to the flourishing peaks that you have always envisioned.
           </Typography>
           <Typography variant="p">We ensure</Typography>
