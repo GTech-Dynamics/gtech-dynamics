@@ -16,10 +16,11 @@
   max-height: 100%;
   object-fit: contain;
   border-radius: 20px !important;
+  transition: transform 1s ease;
 }
 .careers-grid-child2 img:hover,
 img:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .careers-grid-child1 {

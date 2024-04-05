@@ -18,13 +18,13 @@ function Technology() {
           </Typography>
         </Box>
       </Box>
-      <Box className="main-body" sx={{ backgroundColor: "#edeff8" }}>
+      <Box className="main-body">
         <TechnologyBase subtitle={subTitle} description={description} />
-        <Box className="techbody-child2">
+        <Box>
           <VerticalTabs />
         </Box>
+        <TechnologyGrid items={All} />
       </Box>
-      <TechnologyGrid items={All} />
     </>
   );
 }

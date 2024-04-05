@@ -9,6 +9,9 @@
   display: flex;
   height: 120px !important;
 }
+.hire-child-grid .left {
+  padding-left: 10px !important;
+}
 .hire-child-grid .left .logo-container {
   border: 1px solid black;
   border-radius: 70%;
@@ -24,6 +27,7 @@
 }
 .hire-child-grid .right {
   text-align: left;
+  padding-top: 7px !important;
 }
 @media (max-width: 768px) {
   .hire-child-grid > * {

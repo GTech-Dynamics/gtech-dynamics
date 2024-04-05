@@ -31,10 +31,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
 }
 .header-content > * {
   animation: fadeIn 1s ease forwards;
+  color: white !important;
 }
 .grid {
   margin: 0 auto;
