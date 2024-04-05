@@ -14,6 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink, useLocation } from "react-router-dom";
 import "../style/navbar.css";
 import ProgressBar from "./progress-bar";
+import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function NavBar() {
   const [overlayClosing, setOverlayClosing] = useState(false);
   const [activeTab, setActiveTab] = useState(-1);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setActiveTab(1);
@@ -35,10 +37,16 @@ export default function NavBar() {
     }
   };
   const handleHireTalentClick = () => {
-    const hireTalentSection = document.getElementById("hireTalentSection");
-    if (hireTalentSection) {
-      hireTalentSection.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/home" && location.pathname !== "/") {
+      navigate("/home");
     }
+
+    setTimeout(() => {
+      const hireTalentSection = document.getElementById("hireTalentSection");
+      if (hireTalentSection) {
+        hireTalentSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 500);
   };
   const handleMenuClose = () => {
     setMenuOpen(false);
@@ -115,6 +123,7 @@ export default function NavBar() {
               <Tab
                 label="Hire Talent"
                 className="tab"
+                to="/home"
                 key="hire talent"
                 onClick={handleHireTalentClick}
               />

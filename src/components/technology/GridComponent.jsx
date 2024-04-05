@@ -11,7 +11,7 @@ const TechnologyGrid = ({ items, home }) => {
                   <Box className="logo-container">{item.logo}</Box>
                 </Grid>
                 <Grid item sm={12} md={8} key={index} className="right">
-                  <Typography variant="p">
+                  <Typography variant="h6" className="heading">
                     <b>{item.heading}</b>
                   </Typography>
                   <Typography varaint="p">{item.description}</Typography>
