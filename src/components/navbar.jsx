@@ -184,16 +184,24 @@ export default function NavBar() {
             className="tab"
           />
           <Tab
+            label="Technologies"
+            component={NavLink}
+            to="/technology"
+            className="tab"
+            key="technology"
+          />
+          <Tab
             label="portfolio"
             component={NavLink}
             to="/portfolio"
             className="tab"
+            key="portfolio"
           />
           <Tab
-            label="technology"
-            component={NavLink}
-            to="/technology"
+            label="Hire Talent"
             className="tab"
+            key="hire talent"
+            onClick={handleHireTalentClick}
           />
           <Tab
             label="careers"

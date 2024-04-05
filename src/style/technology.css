@@ -105,6 +105,12 @@
     width: 50% !important;
     overflow: auto !important;
   }
+  .home-grid {
+    margin-top: 5px !important;
+  }
+  .home-grid .child-grid .left {
+    padding-left: 0px !important;
+  }
   .home-grid .child-grid .left > * {
     margin: 0 auto;
   }
@@ -121,7 +127,6 @@
     margin-top: 20px;
     flex-direction: column !important;
   }
-
   .technology-tabs {
     width: 100% !important;
   }
@@ -145,8 +150,5 @@
   }
   .techbody-child2 {
     padding: 0px !important;
-  }
-  .home-grid .child-grid .left > * {
-    margin: 0 auto;
   }
 }

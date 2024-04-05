@@ -57,7 +57,7 @@
   color: white;
   padding: 55px !important;
   background-color: black;
-  animation: floatFromRight 1s ease-in-out !important;
+  animation: floatFromRight 2s ease-in-out !important;
 }
 .custom-textfield {
   background-color: white;
@@ -114,16 +114,6 @@
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-@keyframes floatFromRight {
-  from {
-    transform: translateX(3%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
