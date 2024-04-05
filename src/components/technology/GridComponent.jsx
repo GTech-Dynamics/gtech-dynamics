@@ -1,7 +1,7 @@
 import { Box, Typography, Grid } from "@mui/material";
 const TechnologyGrid = ({ items, home }) => {
   return (
-    <>
+    <Box className="body-child2">
       {home ? (
         <Grid container spacing={2} className="home-grid">
           {items.map((item, index) => (
@@ -34,7 +34,7 @@ const TechnologyGrid = ({ items, home }) => {
           ))}
         </Grid>
       )}
-    </>
+    </Box>
   );
 };
 export default TechnologyGrid;

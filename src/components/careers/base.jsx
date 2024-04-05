@@ -20,22 +20,25 @@ function BaseComponent() {
           </Box>
         </Box>
       </Box>
-      <Grid container spacing={2} className="careers-grid">
-        <Grid item sm={12} md={6} className="careers-grid-child1">
-          <Box>
-            <Typography variant="h5">Become An IT Expert</Typography>
-            <Typography variant="p">
-              If you think you have the suitable skill set, are passionate about
-              technology, and are aware of the rising technological trends, we
-              want you on our team. You are exactly who we’re looking for! Show
-              us your talent and experience with your portfolio.
-            </Typography>
-          </Box>
+      <Box className="body-child2">
+        <Grid container spacing={2} className="careers-grid">
+          <Grid item sm={12} md={6} className="careers-grid-child1">
+            <Box>
+              <Typography variant="h5">Become An IT Expert</Typography>
+              <Typography variant="p">
+                If you think you have the suitable skill set, are passionate
+                about technology, and are aware of the rising technological
+                trends, we want you on our team. You are exactly who we’re
+                looking for! Show us your talent and experience with your
+                portfolio.
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item sm={12} md={6} className="careers-grid-child2">
+            <img src={image1} alt="Logo" />
+          </Grid>
         </Grid>
-        <Grid item sm={12} md={6} className="careers-grid-child2">
-          <img src={image1} alt="Logo" />
-        </Grid>
-      </Grid>
+      </Box>
     </>
   );
 }

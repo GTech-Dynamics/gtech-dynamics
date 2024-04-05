@@ -33,10 +33,10 @@
   align-items: center;
   flex-direction: column;
   color: white;
-  animation: slideFromBottom 1.5s forwards, fadeIn 1.5s forwards;
 }
 .carousal-content > * {
   margin: 35px 0px 0px 0px !important;
+  animation: fadeIn 2s ease forwards;
 }
 .custom-next-icon {
   color: white;
@@ -89,9 +89,12 @@
   border: 1px solid white;
   font-weight: var(--btn-weight) !important;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 8px 20px !important;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.btn > span:first-child {
+  margin-right: 7px;
 }
 .btn:hover {
   background: linear-gradient(45deg, #116dad, #1b155e);

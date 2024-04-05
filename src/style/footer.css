@@ -13,7 +13,7 @@
   margin-left: -25px !important;
 }
 .sections {
-  animation: floatFromRight 1s ease-in-out !important;
+  animation: floatFromRight 2s ease forwards !important;
   text-align: left;
 }
 .sections .content {
@@ -21,7 +21,7 @@
 }
 .section2 {
   margin-top: -120px !important;
-  animation: floatFromRight 1s ease-in-out !important;
+  animation: floatFromRight 2s ease forwards !important;
 }
 .section2 > * {
   margin-top: 10px;
@@ -36,14 +36,6 @@
 }
 .nav-link {
   text-decoration: none;
-}
-@keyframes floatFromRight {
-  from {
-    transform: translateX(5%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 @media screen and (max-width: 900px) {
   .sections {
