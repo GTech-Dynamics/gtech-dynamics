@@ -107,18 +107,18 @@ export default function NavBar() {
                 key="service"
               />
               <Tab
+                label="Technologies"
+                component={NavLink}
+                to="/technology"
+                className="tab"
+                key="technology"
+              />
+              <Tab
                 label="portfolio"
                 component={NavLink}
                 to="/portfolio"
                 className="tab"
                 key="portfolio"
-              />
-              <Tab
-                label="Technology"
-                component={NavLink}
-                to="/technology"
-                className="tab"
-                key="technology"
               />
               <Tab
                 label="Hire Talent"

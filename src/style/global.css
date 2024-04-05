@@ -100,13 +100,18 @@
   padding: 40px;
   width: 100% !important;
 }
+@media (max-width: 899px) {
+  .body-child1 > * {
+    padding: 10px !important;
+  }
+}
 @media (max-width: 768px) {
   .header > * {
     font-size: 36px !important;
     font-weight: 500 !important;
   }
-  .main-body {
-    padding: 20px;
+  .body-child1 {
+    padding: 10px;
   }
   .body-child1 > h3 {
     font-size: 36px !important;

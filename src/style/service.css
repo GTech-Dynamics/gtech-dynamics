@@ -42,6 +42,7 @@
 }
 .grid-item {
   margin-bottom: 10px !important;
+  animation: floatFromRight 1s ease-in-out !important;
 }
 .service-card {
   position: relative;
@@ -104,6 +105,16 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes floatFromRight {
+  from {
+    transform: translateX(3%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @media (max-width: 768px) {

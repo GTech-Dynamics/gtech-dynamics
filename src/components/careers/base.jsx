@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/careers.css";
 import { Box, Typography, Grid } from "@mui/material";
 import image1 from "../../static/images/image1.png";
 function BaseComponent() {

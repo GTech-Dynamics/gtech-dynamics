@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import ServicesComponent from "./services";
 import { useEffect } from "react";
+import "../../style/service.css";
+
 function Service() {
   useEffect(() => {
     document.title = "Services - Gtech Dynamics";

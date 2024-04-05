@@ -7,6 +7,9 @@ import TechnologyBase from "../technology/base";
 import TechnologyGrid from "../technology/GridComponent";
 import { gridHome } from "../technology/GridItems";
 import Talent from "../hire-talent/index";
+import WorkBase from "../how-we-work";
+import "../../style/home.css";
+
 function Home() {
   useEffect(() => {
     document.title = "Home - Gtech Dynamics";
@@ -18,18 +21,21 @@ function Home() {
   return (
     <>
       <CarouselComponent />
-      <Box className="service-component">
+      <Box className="component-sections">
         <ServicesComponent />
       </Box>
       <Box>
-        <PortfolioComponent home />
-      </Box>
-      <Box className="technology-component">
         <TechnologyBase subtitle={techSubTitle} description={techDescription} />
         <TechnologyGrid items={gridHome} home="true" />
       </Box>
+      <Box className="component-sections">
+        <PortfolioComponent home />
+      </Box>
       <Box id="hireTalentSection">
         <Talent />
+      </Box>
+      <Box className="component-sections">
+        <WorkBase />
       </Box>
     </>
   );

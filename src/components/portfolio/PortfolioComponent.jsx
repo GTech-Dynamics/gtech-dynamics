@@ -47,36 +47,39 @@ const PortfolioComponent = (home) => {
         </Box>
       </Box>
       <Box className="body-child2">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          centered
-          TabIndicatorProps={{
-            style: { display: "none" },
-          }}
-          className="portfolio-tab"
-        >
-          <Tab label="All" />
-          <Tab label="Custom Application" />
-          <Tab label="Web Development" />
-          <Tab label="App Development" />
-          <Tab label="Ecommerce" />
-        </Tabs>
-        {value === 0 &&
-          (showAllItems ? (
-            <GridComponent items={All} />
-          ) : (
-            <GridComponent items={All.slice(0, 4)} />
-          ))}
-        {value === 1 && <GridComponent items={AppDevelopment} />}
-        {value === 2 && <GridComponent items={WebDevelopment} />}
-        {value === 3 && <GridComponent items={Ecommerce} />}
-        {value === 4 && <GridComponent items={CustomApplication} />}
-        {home.home && value === 0 && !showAllItems && (
-          <Box className="button-container">
-            <Button onClick={handleShowMore}>Show More</Button>
-          </Box>
-        )}
+        <Box className="portfolio-tab-parent">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            centered
+            TabIndicatorProps={{
+              style: { display: "none" },
+            }}
+            className="portfolio-tab"
+            sx={{ backgroundColor: "white" }}
+          >
+            <Tab label="All" />
+            <Tab label="Custom Application" />
+            <Tab label="Web Development" />
+            <Tab label="App Development" />
+            <Tab label="Ecommerce" />
+          </Tabs>
+          {value === 0 &&
+            (showAllItems ? (
+              <GridComponent items={All} />
+            ) : (
+              <GridComponent items={All.slice(0, 4)} />
+            ))}
+          {value === 1 && <GridComponent items={AppDevelopment} />}
+          {value === 2 && <GridComponent items={WebDevelopment} />}
+          {value === 3 && <GridComponent items={Ecommerce} />}
+          {value === 4 && <GridComponent items={CustomApplication} />}
+          {home.home && value === 0 && !showAllItems && (
+            <Box className="button-container">
+              <Button onClick={handleShowMore}>Show More</Button>
+            </Box>
+          )}
+        </Box>
       </Box>
     </>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardContent, Typography, Grid, IconButton } from "@mui/material";
-import "../../style/portfolio.css";
 import LinkIcon from "@mui/icons-material/Link";
 
 const GridComponent = ({ items }) => {
