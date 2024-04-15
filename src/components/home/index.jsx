@@ -25,11 +25,16 @@ function Home() {
         <ServicesComponent />
       </Box>
       <Box>
-        <TechnologyBase subtitle={techSubTitle} description={techDescription} />
-        <TechnologyGrid items={gridHome} home="true" />
+        <PortfolioComponent home />
       </Box>
       <Box className="component-sections">
-        <PortfolioComponent home />
+        <Box className="main-body">
+          <TechnologyBase
+            subtitle={techSubTitle}
+            description={techDescription}
+          />
+          <TechnologyGrid items={gridHome} home="true" />
+        </Box>
       </Box>
       <Box id="hireTalentSection">
         <Talent />

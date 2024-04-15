@@ -61,168 +61,172 @@ export default function NavBar() {
   };
   return (
     <>
-      <div>
-        <AppBar className="appbar">
-          {(location.pathname === "/home" || location.pathname === "/") && (
-            <ProgressBar />
-          )}
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <img
-                src="/logo/android-chrome-192x192.png"
-                alt="logo"
-                width="170px"
-                height="100px"
-              />
-            </Typography>
-            <IconButton
-              color="black"
-              aria-label="menu"
-              onClick={handleMenuOpen}
-              className="menu-icon"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Tabs
-              className="tabs"
-              value={activeTab}
-              onChange={(event, newValue) => setActiveTab(newValue)}
-              indicatorColor="secondary"
-              TabIndicatorProps={{
-                style: { display: "none" },
-              }}
-            >
-              <Tab
-                label="Home"
-                component={NavLink}
-                to="/home"
-                className="tab"
-                key="home"
-              />
-              <Tab
-                label="Services"
-                component={NavLink}
-                to="/services"
-                className="tab"
-                key="service"
-              />
-              <Tab
-                label="Technologies"
-                component={NavLink}
-                to="/technology"
-                className="tab"
-                key="technology"
-              />
-              <Tab
-                label="portfolio"
-                component={NavLink}
-                to="/portfolio"
-                className="tab"
-                key="portfolio"
-              />
-              <Tab
-                label="Hire Talent"
-                className="tab"
-                to="/home"
-                key="hire talent"
-                onClick={handleHireTalentClick}
-              />
-              <Tab
-                label="Careers"
-                component={NavLink}
-                to="/careers"
-                className="tab"
-                key="careers"
-              />
-              <Tab
-                label="About Us"
-                component={NavLink}
-                to="/about-us"
-                className="tab"
-                key="about us"
-              />
-              <Tab
-                label="Contact Us"
-                component={NavLink}
-                to="/contact-us"
-                className="tab"
-                key="contact us"
-              />
-            </Tabs>
-          </Toolbar>
-        </AppBar>
-        <Toolbar />
-
-        {overlayOpen && (
-          <div className={`overlay ${overlayClosing ? "closing" : ""}`} />
+      <AppBar className="appbar">
+        {(location.pathname === "/home" || location.pathname === "/") && (
+          <ProgressBar />
         )}
+        <Toolbar>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              flexGrow: 1,
+            }}
+          >
+            <img
+              src="/logo/android-chrome-192x192.png"
+              alt="logo"
+              width="170px"
+              height="100px"
+            />
+          </Typography>
+          <IconButton
+            color="black"
+            aria-label="menu"
+            onClick={handleMenuOpen}
+            className="menu-icon"
+          >
+            <MenuIcon />
+          </IconButton>
+          <Tabs
+            className="tabs"
+            value={activeTab}
+            onChange={(event, newValue) => setActiveTab(newValue)}
+            indicatorColor="secondary"
+            TabIndicatorProps={{
+              style: { display: "none" },
+            }}
+          >
+            <Tab
+              label="Home"
+              component={NavLink}
+              to="/home"
+              className="tab"
+              key="home"
+            />
+            <Tab
+              label="Services"
+              component={NavLink}
+              to="/services"
+              className="tab"
+              key="service"
+            />
+            <Tab
+              label="Technologies"
+              component={NavLink}
+              to="/technology"
+              className="tab"
+              key="technology"
+            />
+            <Tab
+              label="portfolio"
+              component={NavLink}
+              to="/portfolio"
+              className="tab"
+              key="portfolio"
+            />
+            <Tab
+              label="Hire Talent"
+              className="tab"
+              to="/home"
+              key="hire talent"
+              onClick={handleHireTalentClick}
+            />
+            <Tab
+              label="Careers"
+              component={NavLink}
+              to="/careers"
+              className="tab"
+              key="careers"
+            />
+            <Tab
+              label="About Us"
+              component={NavLink}
+              to="/about-us"
+              className="tab"
+              key="about us"
+            />
+            <Tab
+              label="Contact Us"
+              component={NavLink}
+              to="/contact-us"
+              className="tab"
+              key="contact us"
+            />
+          </Tabs>
+        </Toolbar>
+      </AppBar>
+      {/* <Toolbar /> */}
 
-        <Drawer
-          anchor="left"
-          open={menuOpen}
-          onClose={handleMenuClose}
-          sx={{ display: { xs: "block", md: "none" } }}
-          className="drawer"
-          variant="persistant"
-          transitionDuration={{ enter: 2000, exit: 2000 }}
-          classes={{
-            paper: "drawer-paper",
-          }}
-        >
-          <Box className="drawer-header">
-            <Box className="drawer-close-icon">
-              <IconButton onClick={handleMenuClose}>
-                <CloseIcon />
-              </IconButton>
-            </Box>
+      {overlayOpen && (
+        <div className={`overlay ${overlayClosing ? "closing" : ""}`} />
+      )}
+
+      <Drawer
+        anchor="left"
+        open={menuOpen}
+        onClose={handleMenuClose}
+        sx={{ display: { xs: "block", md: "none" } }}
+        className="drawer"
+        variant="persistant"
+        transitionDuration={{ enter: 2000, exit: 2000 }}
+        classes={{
+          paper: "drawer-paper",
+        }}
+      >
+        <Box className="drawer-header">
+          <Box className="drawer-close-icon">
+            <IconButton onClick={handleMenuClose}>
+              <CloseIcon />
+            </IconButton>
           </Box>
-          <Tab label="Home" component={NavLink} to="/home" className="tab" />
-          <Tab
-            label="Services"
-            component={NavLink}
-            to="/services"
-            className="tab"
-          />
-          <Tab
-            label="Technologies"
-            component={NavLink}
-            to="/technology"
-            className="tab"
-            key="technology"
-          />
-          <Tab
-            label="portfolio"
-            component={NavLink}
-            to="/portfolio"
-            className="tab"
-            key="portfolio"
-          />
-          <Tab
-            label="Hire Talent"
-            className="tab"
-            key="hire talent"
-            onClick={handleHireTalentClick}
-          />
-          <Tab
-            label="careers"
-            component={NavLink}
-            to="/careers"
-            className="tab"
-          />
-          <Tab
-            label="About Us"
-            component={NavLink}
-            to="/about-us"
-            className="tab"
-          />
-          <Tab
-            label="Contact Us"
-            component={NavLink}
-            to="/contact-us"
-            className="tab"
-          />
-        </Drawer>
-      </div>
+        </Box>
+        <Tab label="Home" component={NavLink} to="/home" className="tab" />
+        <Tab
+          label="Services"
+          component={NavLink}
+          to="/services"
+          className="tab"
+        />
+        <Tab
+          label="Technologies"
+          component={NavLink}
+          to="/technology"
+          className="tab"
+          key="technology"
+        />
+        <Tab
+          label="portfolio"
+          component={NavLink}
+          to="/portfolio"
+          className="tab"
+          key="portfolio"
+        />
+        <Tab
+          label="Hire Talent"
+          className="tab"
+          key="hire talent"
+          onClick={handleHireTalentClick}
+        />
+        <Tab
+          label="careers"
+          component={NavLink}
+          to="/careers"
+          className="tab"
+        />
+        <Tab
+          label="About Us"
+          component={NavLink}
+          to="/about-us"
+          className="tab"
+        />
+        <Tab
+          label="Contact Us"
+          component={NavLink}
+          to="/contact-us"
+          className="tab"
+        />
+      </Drawer>
     </>
   );
 }

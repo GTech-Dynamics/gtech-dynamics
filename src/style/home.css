@@ -1,5 +1,6 @@
 .carousal-parent {
-  height: var(--header-height);
+  margin-top: 100px;
+  height: calc(100vh - 100px);
 }
 .carousal {
   width: 100%;
@@ -37,6 +38,7 @@
 .carousal-content > * {
   margin: 35px 0px 0px 0px !important;
   animation: fadeIn 2s ease forwards;
+  color: white !important;
 }
 .custom-next-icon {
   color: white;

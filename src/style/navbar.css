@@ -1,6 +1,6 @@
 .appbar {
-  color: black;
-  size: 100px;
+  color: #000000;
+  height: 100px !important;
   background-color: white !important;
 }
 .tabs {
