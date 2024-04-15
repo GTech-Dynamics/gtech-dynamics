@@ -42,96 +42,95 @@ function Contact() {
             </Typography>
           </Box>
         </Box>
-      </Box>
-      <Box className="contact-body-child2">
-        <Grid container spacing={2} className="parent-grid">
-          <Grid item xs={12} sm={12} md={4} className="child-grid1">
-            <Typography variant="h3">Contact Us</Typography>
-            <Box>
-              <Typography variant="h5">Phone</Typography>
-              <Typography variant="p">USA Number: +1 564 224 5720</Typography>
-            </Box>
-            <Box>
-              <Typography variant="h5">Email</Typography>
-              <Typography variant="p">info@gtechdynamics.com</Typography>
-            </Box>
+        <Box className="contact-body-child2">
+          <Grid container spacing={2} className="contact-grid">
+            <Grid item xs={12} sm={12} md={4} className="child-grid1">
+              <Typography variant="h3">Contact Us</Typography>
+              <Box>
+                <Typography variant="h5">Phone</Typography>
+                <Typography variant="p">USA Number: +1 564 224 5720</Typography>
+              </Box>
+              <Box>
+                <Typography variant="h5">Email</Typography>
+                <Typography variant="p">info@gtechdynamics.com</Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={12} md={8} className="child-grid2">
+              <form sx={{ color: "white" }}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      fullWidth
+                      placeholder="First Name"
+                      name="firstName"
+                      className="custom-textfield"
+                      variant="filled"
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      fullWidth
+                      placeholder="Last Name"
+                      name="lastName"
+                      className="custom-textfield"
+                      variant="filled"
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      fullWidth
+                      placeholder="Email"
+                      name="email"
+                      type="email"
+                      className="custom-textfield"
+                      variant="filled"
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      fullWidth
+                      placeholder="Subject"
+                      name="subject"
+                      className="custom-textfield"
+                      variant="filled"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      multiline
+                      rows={4}
+                      placeholder="Message"
+                      name="message"
+                      className="custom-textfield"
+                      variant="filled"
+                    />
+                  </Grid>
+                  <Grid item xs={12} sx={{ color: "black", textAlign: "left" }}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          sx={{
+                            color: "#1b155e",
+                          }}
+                        />
+                      }
+                      label="I agree to the terms and conditions"
+                      sx={{ color: "#737373" }}
+                    />
+                  </Grid>
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    className="form-button"
+                  >
+                    Send Message
+                  </Button>
+                </Grid>
+              </form>
+            </Grid>
           </Grid>
-
-          <Grid item xs={12} sm={12} md={8} className="child-grid2">
-            <form sx={{ color: "white" }}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    fullWidth
-                    placeholder="First Name"
-                    name="firstName"
-                    className="custom-textfield"
-                    variant="filled"
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    fullWidth
-                    placeholder="Last Name"
-                    name="lastName"
-                    className="custom-textfield"
-                    variant="filled"
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    fullWidth
-                    placeholder="Email"
-                    name="email"
-                    type="email"
-                    className="custom-textfield"
-                    variant="filled"
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    fullWidth
-                    placeholder="Subject"
-                    name="subject"
-                    className="custom-textfield"
-                    variant="filled"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    multiline
-                    rows={4}
-                    placeholder="Message"
-                    name="message"
-                    className="custom-textfield"
-                    variant="filled"
-                  />
-                </Grid>
-                <Grid item xs={12} sx={{ color: "white", textAlign: "left" }}>
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        sx={{
-                          color: "white",
-                        }}
-                      />
-                    }
-                    label="I agree to the terms and conditions"
-                    sx={{ color: "white" }}
-                  />
-                </Grid>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  className="form-button"
-                >
-                  Send Message
-                </Button>
-              </Grid>
-            </form>
-          </Grid>
-        </Grid>
+        </Box>
       </Box>
     </Box>
   );

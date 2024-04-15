@@ -61,10 +61,6 @@ export const All = [
     heading: "Python",
   },
   {
-    logo: require("../../static/images/vue.png"),
-    heading: "Vue",
-  },
-  {
     logo: require("../../static/images/android.png"),
     heading: "Android",
   },

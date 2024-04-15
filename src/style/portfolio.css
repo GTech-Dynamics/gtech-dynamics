@@ -1,12 +1,12 @@
 .portfolio-tab-parent {
   background-color: white;
-  /* margin-left: -60px !important;
-  margin-right: -55px !important; */
-
-  /* padding: 0px 10px 0px 10px; */
 }
 .portfolio-tab .MuiTab-root.Mui-selected {
-  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  ) !important;
   color: white;
   font-weight: bold !important;
 }
@@ -16,16 +16,15 @@
 .portfolio-card {
   transform-origin: bottom;
   height: 270px;
-  padding: 20px;
   box-shadow: 5;
-  background-size: cover;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
   background-position: center;
   color: white;
   position: relative;
   overflow: hidden;
   border-radius: 20px !important;
 }
-
 .card-content {
   position: absolute;
   bottom: -100%;

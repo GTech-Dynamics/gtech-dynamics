@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   bottom: 0;
-  background-color: #0c4b77;
+  background-color: rgb(109, 201, 244);
   padding: 40px;
   color: white !important;
 }
@@ -32,7 +32,7 @@
   color: white !important;
 }
 .icon {
-  color: #116dad;
+  color: var(--secondary-color);
 }
 .copyright {
   margin-top: 40px !important;

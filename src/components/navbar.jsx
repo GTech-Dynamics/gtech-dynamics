@@ -45,6 +45,9 @@ export default function NavBar() {
       const hireTalentSection = document.getElementById("hireTalentSection");
       if (hireTalentSection) {
         hireTalentSection.scrollIntoView({ behavior: "smooth" });
+        if (menuOpen) {
+          handleMenuClose();
+        }
       }
     }, 500);
   };
@@ -181,12 +184,19 @@ export default function NavBar() {
             </IconButton>
           </Box>
         </Box>
-        <Tab label="Home" component={NavLink} to="/home" className="tab" />
+        <Tab
+          label="Home"
+          component={NavLink}
+          to="/home"
+          className="tab"
+          onClick={handleMenuClose}
+        />
         <Tab
           label="Services"
           component={NavLink}
           to="/services"
           className="tab"
+          onClick={handleMenuClose}
         />
         <Tab
           label="Technologies"
@@ -194,6 +204,7 @@ export default function NavBar() {
           to="/technology"
           className="tab"
           key="technology"
+          onClick={handleMenuClose}
         />
         <Tab
           label="portfolio"
@@ -201,6 +212,7 @@ export default function NavBar() {
           to="/portfolio"
           className="tab"
           key="portfolio"
+          onClick={handleMenuClose}
         />
         <Tab
           label="Hire Talent"
@@ -213,18 +225,21 @@ export default function NavBar() {
           component={NavLink}
           to="/careers"
           className="tab"
+          onClick={handleMenuClose}
         />
         <Tab
           label="About Us"
           component={NavLink}
           to="/about-us"
           className="tab"
+          onClick={handleMenuClose}
         />
         <Tab
           label="Contact Us"
           component={NavLink}
           to="/contact-us"
           className="tab"
+          onClick={handleMenuClose}
         />
       </Drawer>
     </>
