@@ -13,7 +13,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 }
 .carousal-body {
@@ -144,10 +144,6 @@
   }
 }
 @media (max-width: 768px) {
-  .carousal-item {
-    width: 100%;
-    height: 100%;
-  }
   .carousal .MuiButtonBase-root {
     display: none;
   }
@@ -168,19 +164,9 @@
     padding: 5px !important;
   }
   .btn {
-    padding: 8px 1px !important;
+    padding: 8px 2px !important;
   }
   .btn > span:first-child {
     margin-right: 0px;
   }
 }
-/* @media (max-width: 690px) {
-  .btn {
-    padding: 8px 4px !important;
-  }
-}
-@media (max-width: 590px) {
-  .btn {
-    padding: 8px 0px !important;
-  }
-} */
