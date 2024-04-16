@@ -42,7 +42,9 @@ const CarouselComponent = () => {
           <Box
             key={i}
             className="carousal-item"
-            sx={{ backgroundImage: item.background }}
+            sx={{
+              backgroundImage: isMediumScreen ? item.mobilebg : item.background,
+            }}
           >
             <Box className="carousal-body">
               <Box className="carousal-content">

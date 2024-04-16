@@ -4,6 +4,7 @@ import TechnologyGrid from "./GridComponent";
 import TechnologyBase from "./base";
 import { All } from "./GridItems";
 import "../../style/technology.css";
+import bg from "../../static/images/technologybackground.jpg";
 function Technology() {
   let subTitle = "Technologies We Utilize";
   let description =
@@ -11,7 +12,12 @@ function Technology() {
 
   return (
     <>
-      <Box className="parent">
+      <Box
+        className="parent"
+        sx={{
+          backgroundImage: `url(${bg})`,
+        }}
+      >
         <Box className="header">
           <Typography variant="h3">
             Leveraging Cutting-edge IT technologies To deliver innovate products

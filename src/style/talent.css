@@ -27,7 +27,7 @@
 }
 .hire-child-grid .right {
   text-align: left;
-  padding-top: 7px !important;
+  padding: 10px 0px 0px 0px !important;
 }
 @media (max-width: 768px) {
   .hire-child-grid > * {

@@ -10,7 +10,6 @@ const HireTalentGrid = () => {
           <Grid
             item
             xs={12}
-            sm={6}
             md={6}
             lg={4}
             key={index}
@@ -20,7 +19,7 @@ const HireTalentGrid = () => {
               <Grid item xs={12} sm={3} md={3} key={index} className="left">
                 <Box className="logo-container">{item.logo}</Box>
               </Grid>
-              <Grid item sm={9} md={9} key={index} className="right">
+              <Grid item sm={9} md={8} key={index} className="right">
                 <Typography varaint="p">{item.description}</Typography>
               </Grid>
             </Grid>
