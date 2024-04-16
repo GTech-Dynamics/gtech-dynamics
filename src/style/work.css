@@ -1,6 +1,6 @@
 .work-parent {
   height: auto;
-  padding: 55px 0px 5px 0px;
+  padding: 55px;
 }
 .work-parent .child1 {
   display: flex;
@@ -56,7 +56,7 @@
   font-size: 25px !important;
 }
 .work-parent .child2 {
-  padding: 0px !important;
+  padding: 5px !important;
   height: 100%;
   margin-top: 50px;
 }
@@ -67,19 +67,28 @@
   height: 80% !important;
 }
 @media (max-width: 899px) {
-  .work-parent {
-    padding: 5px;
-  }
   .work-parent .child1 {
     margin: 10px !important;
     height: auto;
     padding: 10px !important;
   }
+
   .work-parent .child2 .img {
     height: 100%;
     border-radius: 8px !important;
   }
   .subtitle {
     font-size: 18px !important;
+  }
+}
+@media (max-width: 500px) {
+  .work-parent {
+    padding: 5px;
+  }
+  .work-parent .child1 .title {
+    width: 100% !important;
+  }
+  .work-parent .child1 .title:after {
+    left: 150px;
   }
 }

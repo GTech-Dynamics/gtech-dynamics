@@ -3,7 +3,7 @@ import "../../style/work.css";
 import { Box, Grid, Typography } from "@mui/material";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import image1 from "../../static/images/image1.png";
+import image1 from "../../static/images/about-us.webp";
 function WorkBase() {
   return (
     <Grid container spacing={2} className="work-parent">

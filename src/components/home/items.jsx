@@ -1,6 +1,6 @@
-import image1 from "../../static/images/carousal_background.jpg";
-import image2 from "../../static/images/carousal_2.jpg";
-import image3 from "../../static/images/carousal_3.jpg";
+import image1 from "../../static/images/bg1.jpg";
+import image2 from "../../static/images/bg2.jpg";
+import image3 from "../../static/images/bg3.jpg";
 export const CarousalItems = [
   {
     background: `url(${image1})`,

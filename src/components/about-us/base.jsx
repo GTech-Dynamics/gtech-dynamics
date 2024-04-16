@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import image1 from "../../static/images/image1.png";
+import image1 from "../../static/images/how-we-work.jpg";
 function AboutBase() {
   return (
     <Grid container spacing={2} className="about-child1">
