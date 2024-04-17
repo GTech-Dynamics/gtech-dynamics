@@ -135,12 +135,15 @@
   background-image: linear-gradient(180deg, #f1f8fb 0%, #f7fafe 100%);
 }
 
-@media (max-width: 810px) {
+@media (max-width: 899px) {
   .css-1abc02a > button {
     right: 20px;
   }
   .css-hn784z > button {
     left: 20px;
+  }
+  .carousal-parent {
+    margin-top: 95px;
   }
 }
 @media (max-width: 768px) {
@@ -164,9 +167,13 @@
     padding: 5px !important;
   }
   .btn {
-    padding: 8px 2px !important;
+    font-size: 12px !important;
+    padding: 8px 15px !important;
+  }
+  .buttons-container .btn .css-i4bv87-MuiSvgIcon-root {
+    width: 0.6em !important;
   }
   .btn > span:first-child {
-    margin-right: 0px;
+    margin-right: 4px;
   }
 }

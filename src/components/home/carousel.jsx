@@ -61,7 +61,9 @@ const CarouselComponent = () => {
                     <span>
                       <b>About Us</b>
                     </span>
-                    <span>{<ArrowForwardIcon color="white" />}</span>
+                    <span>
+                      {<ArrowForwardIcon className="carousal-icon" />}
+                    </span>
                   </button>
                   <button
                     className="btn"
@@ -70,7 +72,9 @@ const CarouselComponent = () => {
                     <span>
                       <b>Contact Us</b>
                     </span>
-                    <span>{<ArrowForwardIcon color="white" />}</span>
+                    <span>
+                      {<ArrowForwardIcon className="carousal-icon" />}
+                    </span>
                   </button>
                 </Box>
               </Box>

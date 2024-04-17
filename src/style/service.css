@@ -103,6 +103,9 @@
   fill: #fff;
 }
 @media (max-width: 899px) {
+  .service-parent {
+    margin-top: 95px;
+  }
   .header-content {
     width: 100%;
     height: 100%;
