@@ -28,7 +28,7 @@
   display: block;
   position: absolute;
   top: 50%;
-  right: 230px;
+  left: 130px;
 }
 .work-parent .child1 .subtitle {
   font-size: 40px !important;

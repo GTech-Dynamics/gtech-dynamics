@@ -57,8 +57,6 @@
   color: var(--secondary-color) !important;
 }
 .drawer-close-icon {
-  border-radius: 10px;
-  border: 1px solid black;
   margin-top: 5px;
   margin-right: 5px;
   align-items: center;
