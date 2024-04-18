@@ -20,13 +20,27 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [overlayOpen, setOverlayOpen] = useState(false);
   const [overlayClosing, setOverlayClosing] = useState(false);
-  const [activeTab, setActiveTab] = useState(-1);
+  const [activeTab, setActiveTab] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    setActiveTab(1);
-  }, []);
+    if (location.pathname === "/home" || location.pathname === "/") {
+      setActiveTab(0);
+    } else if (location.pathname === "/services") {
+      setActiveTab(1);
+    } else if (location.pathname === "/technology") {
+      setActiveTab(2);
+    } else if (location.pathname === "/portfolio") {
+      setActiveTab(3);
+    } else if (location.pathname === "/careers") {
+      setActiveTab(5);
+    } else if (location.pathname === "/about-us") {
+      setActiveTab(6);
+    } else if (location.pathname === "/contact-us") {
+      setActiveTab(7);
+    }
+  }, [location.pathname]);
 
   const handleMenuOpen = () => {
     if (!menuOpen) {
@@ -69,13 +83,7 @@ export default function NavBar() {
           <ProgressBar />
         )}
         <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-            }}
-          >
+          <Typography variant="h6" component="div" className="header-logo">
             <img
               src="/logo/android-chrome-192x192.png"
               alt="logo"
@@ -159,7 +167,6 @@ export default function NavBar() {
           </Tabs>
         </Toolbar>
       </AppBar>
-      {/* <Toolbar /> */}
 
       {overlayOpen && (
         <div className={`overlay ${overlayClosing ? "closing" : ""}`} />
@@ -171,7 +178,7 @@ export default function NavBar() {
         onClose={handleMenuClose}
         sx={{ display: { xs: "block", md: "none" } }}
         className="drawer"
-        variant="persistant"
+        variant="persistent"
         transitionDuration={{ enter: 2000, exit: 2000 }}
         classes={{
           paper: "drawer-paper",
@@ -189,14 +196,22 @@ export default function NavBar() {
           component={NavLink}
           to="/home"
           className="tab"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(0);
+            handleMenuClose();
+          }}
+          selected={activeTab === 0}
         />
         <Tab
           label="Services"
           component={NavLink}
           to="/services"
           className="tab"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(1);
+            handleMenuClose();
+          }}
+          selected={activeTab === 1}
         />
         <Tab
           label="Technologies"
@@ -204,7 +219,11 @@ export default function NavBar() {
           to="/technology"
           className="tab"
           key="technology"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(2);
+            handleMenuClose();
+          }}
+          selected={activeTab === 2}
         />
         <Tab
           label="portfolio"
@@ -212,34 +231,54 @@ export default function NavBar() {
           to="/portfolio"
           className="tab"
           key="portfolio"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(3);
+            handleMenuClose();
+          }}
+          selected={activeTab === 3}
         />
         <Tab
           label="Hire Talent"
           className="tab"
           key="hire talent"
-          onClick={handleHireTalentClick}
+          onClick={() => {
+            setActiveTab(4);
+            handleHireTalentClick();
+          }}
+          selected={activeTab === 4}
         />
         <Tab
           label="careers"
           component={NavLink}
           to="/careers"
           className="tab"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(5);
+            handleMenuClose();
+          }}
+          selected={activeTab === 5}
         />
         <Tab
           label="About Us"
           component={NavLink}
           to="/about-us"
           className="tab"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(6);
+            handleMenuClose();
+          }}
+          selected={activeTab === 6}
         />
         <Tab
           label="Contact Us"
           component={NavLink}
           to="/contact-us"
           className="tab"
-          onClick={handleMenuClose}
+          onClick={() => {
+            setActiveTab(7);
+            handleMenuClose();
+          }}
+          selected={activeTab === 7}
         />
       </Drawer>
     </>

@@ -117,6 +117,9 @@
   }
 }
 @media (max-width: 899px) {
+  .parent {
+    margin-top: 95px;
+  }
   .header > * {
     font-size: 36px !important;
     font-weight: 500 !important;
