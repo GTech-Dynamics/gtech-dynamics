@@ -50,15 +50,22 @@ export default function NavBar() {
       }, 1000);
     }
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const handleHireTalentClick = () => {
     if (location.pathname !== "/home" && location.pathname !== "/") {
       navigate("/home");
     }
-
     setTimeout(() => {
       const hireTalentSection = document.getElementById("hireTalentSection");
       if (hireTalentSection) {
-        hireTalentSection.scrollIntoView({ behavior: "smooth" });
+        const hireTalentSectionTop =
+          hireTalentSection.getBoundingClientRect().top;
+        const scrollToY = hireTalentSectionTop - 100;
+        window.scrollTo({ top: scrollToY, behavior: "smooth" });
         if (menuOpen) {
           handleMenuClose();
         }
@@ -114,6 +121,7 @@ export default function NavBar() {
               to="/home"
               className="tab"
               key="home"
+              onClick={scrollToTop}
             />
             <Tab
               label="Services"
@@ -121,6 +129,7 @@ export default function NavBar() {
               to="/services"
               className="tab"
               key="service"
+              onClick={scrollToTop}
             />
             <Tab
               label="Technologies"
@@ -128,6 +137,7 @@ export default function NavBar() {
               to="/technology"
               className="tab"
               key="technology"
+              onClick={scrollToTop}
             />
             <Tab
               label="portfolio"
@@ -135,6 +145,7 @@ export default function NavBar() {
               to="/portfolio"
               className="tab"
               key="portfolio"
+              onClick={scrollToTop}
             />
             <Tab
               label="Hire Talent"
@@ -149,6 +160,7 @@ export default function NavBar() {
               to="/careers"
               className="tab"
               key="careers"
+              onClick={scrollToTop}
             />
             <Tab
               label="About Us"
@@ -156,6 +168,7 @@ export default function NavBar() {
               to="/about-us"
               className="tab"
               key="about us"
+              onClick={scrollToTop}
             />
             <Tab
               label="Contact Us"
@@ -163,6 +176,7 @@ export default function NavBar() {
               to="/contact-us"
               className="tab"
               key="contact us"
+              onClick={scrollToTop}
             />
           </Tabs>
         </Toolbar>
@@ -199,6 +213,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(0);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 0}
         />
@@ -210,6 +225,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(1);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 1}
         />
@@ -222,6 +238,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(2);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 2}
         />
@@ -234,6 +251,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(3);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 3}
         />
@@ -255,6 +273,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(5);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 5}
         />
@@ -266,6 +285,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(6);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 6}
         />
@@ -277,6 +297,7 @@ export default function NavBar() {
           onClick={() => {
             setActiveTab(7);
             handleMenuClose();
+            scrollToTop();
           }}
           selected={activeTab === 7}
         />

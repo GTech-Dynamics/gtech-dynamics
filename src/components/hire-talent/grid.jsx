@@ -25,7 +25,6 @@ const HireTalentGrid = () => {
             </Grid>
           </Grid>
         ))}
-        ,
       </Grid>
     </Box>
   );
