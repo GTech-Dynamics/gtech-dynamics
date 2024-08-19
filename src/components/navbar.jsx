@@ -11,10 +11,9 @@ import {
   Box,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "../style/navbar.css";
 import ProgressBar from "./progress-bar";
-import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -86,9 +85,7 @@ export default function NavBar() {
   return (
     <>
       <AppBar className="appbar">
-        {(location.pathname === "/home" || location.pathname === "/") && (
-          <ProgressBar />
-        )}
+        <ProgressBar />
         <Toolbar>
           <Typography variant="h6" component="div" className="header-logo">
             <img

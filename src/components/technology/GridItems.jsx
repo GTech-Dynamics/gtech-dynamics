@@ -5,7 +5,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import ViewDayIcon from "@mui/icons-material/ViewDay";
 export const All = [
   {
-    logo: require("../../static/images/azure.jpg"),
+    logo: require("../../static/images/azure.png"),
     heading: "Azure",
   },
   {
@@ -21,15 +21,15 @@ export const All = [
     heading: "MongoDB",
   },
   {
-    logo: require("../../static/images/Oracle_Logo.jpg"),
+    logo: require("../../static/images/Oracle_Logo.png"),
     heading: "ORACLE",
   },
   {
-    logo: require("../../static/images/angular.png"),
-    heading: "Azngular",
+    logo: require("../../static/images/angular.webp"),
+    heading: "Angular",
   },
   {
-    logo: require("../../static/images/flutter.png"),
+    logo: require("../../static/images/flutter.webp"),
     heading: "Flutter",
   },
   {
@@ -57,7 +57,7 @@ export const All = [
     heading: "Ruby On Rails",
   },
   {
-    logo: require("../../static/images/pytohn.png"),
+    logo: require("../../static/images/python.png"),
     heading: "Python",
   },
   {
