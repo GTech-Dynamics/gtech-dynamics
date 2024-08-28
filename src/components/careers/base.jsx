@@ -21,7 +21,7 @@ function BaseComponent() {
         </Box>
         <Box className="body-child2">
           <Grid container spacing={2} className="careers-grid">
-            <Grid item sm={12} md={6} className="careers-grid-child1">
+            <Grid item xs={12} sm={6} className="careers-grid-child1">
               <Box>
                 <Typography variant="h5">Become An IT Expert</Typography>
                 <Typography variant="p">
@@ -33,7 +33,7 @@ function BaseComponent() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item sm={12} md={6} className="careers-grid-child2">
+            <Grid item xs={12} sm={6} className="careers-grid-child2">
               <img src={image1} alt="Logo" />
             </Grid>
           </Grid>

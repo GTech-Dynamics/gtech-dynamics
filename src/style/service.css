@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .header-content {
   position: relative;
   height: 80%;
@@ -33,20 +34,24 @@
   align-items: center;
   flex-direction: column;
 }
+
 .header-content > * {
   animation: fadeIn 1s ease forwards;
   color: white !important;
 }
+
 .grid {
   margin: 0 auto;
   justify-content: "center";
   align-items: center;
   text-align: center;
 }
+
 .grid-item {
   margin-bottom: 10px !important;
   animation: floatFromRight 2s ease forwards !important;
 }
+
 .service-card {
   position: relative;
   height: 300px;
@@ -55,23 +60,28 @@
   box-shadow: 5px 5px 10px rgba(115, 155, 208, 0.5) !important;
   border-radius: 20px !important;
 }
+
 .service-card-content {
   text-align: center;
   padding: "10px";
 }
+
 .service-card-content > * {
   margin-top: 10px;
   margin-bottom: 25px;
 }
+
 .service-overlay-content {
   text-align: center;
   padding: 10px;
   overflow: auto;
 }
+
 .service-overlay-content > * {
   margin-top: 10px;
   margin-bottom: 25px;
 }
+
 .service-card-overlay {
   position: absolute;
   bottom: 0;
@@ -86,55 +96,69 @@
   transition: height 0.5s ease;
   color: white !important;
 }
+
 .service-overlay-content > * {
   color: white !important;
 }
+
 .service-card:hover .service-card-overlay {
   height: 100%;
   color: white !important;
 }
+
 .service-card:hover .service-overlay-content {
   color: white !important;
 }
+
 .service-card:hover .service-card-content > * {
   color: white !important;
 }
+
 .service-card:hover .MuiSvgIcon-root {
   fill: #fff;
 }
+
 @media (max-width: 899px) {
   .service-parent {
     margin-top: 95px;
   }
+
   .header-content {
     width: 100%;
     height: 100%;
     padding: 25px !important;
   }
+
   .header-content > h3 {
     font-size: 36px !important;
     font-weight: 500 !important;
     margin-bottom: 15px;
   }
+
   .body-child1 > h3 {
     font-size: 36px !important;
     font-weight: 500 !important;
   }
 }
+
 @media (max-width: 768px) {
   .service-body {
     padding: 20px;
   }
+
   .inner-child1 {
     width: 100% !important;
     padding: 0px !important;
   }
+
   .inner-child1 > * {
     padding: 0px !important;
   }
+
   .service-card {
     padding: 0px !important;
   }
+
   .service-card-content > * {
     margin-top: 0px;
     margin-bottom: 0px;

@@ -3,19 +3,23 @@
   flex-direction: row !important;
   padding: 15px 50px 15px 50px !important;
 }
+
 .technology-tabs {
   border-right: 1 !important;
   width: 30% !important;
 }
+
 .panel {
   width: 70% !important;
 }
+
 .technology-tabs .MuiButtonBase-root {
   align-items: flex-start !important;
   font-weight: bold !important;
   text-transform: uppercase !important;
   color: black !important;
 }
+
 .technology-tabs .MuiButtonBase-root.MuiTab-root.Mui-selected {
   background-image: linear-gradient(
     to right,
@@ -25,16 +29,20 @@
   color: white !important;
   padding: 20px !important;
 }
+
 .technology-tabpanel .css-19kzrtu {
   padding: 15px 24px 0px 24px !important;
 }
+
 .technology-tabpanel .css-ahj2mt-MuiTypography-root {
   align-items: left !important;
   text-align: left !important;
 }
+
 .technology-tabpanel .css-ahj2mt-MuiTypography-root > * {
   margin-bottom: 10px !important;
 }
+
 .technology-grid {
   padding: 10px 0px 10px 0px !important;
   align-items: center !important;
@@ -42,26 +50,30 @@
   text-align: center !important;
   display: flex !important;
 }
+
 .technology-grid > * {
   margin-right: 40px !important;
   margin-top: 20px !important;
   margin-bottom: 30px !important;
 }
+
 .home-grid {
   display: flex !important;
-  align-items: center !important;
   text-align: center !important;
   width: 90% !important;
   margin: 0 auto !important;
 }
+
 .home-grid .child-grid {
   display: flex;
-  height: 200px !important;
 }
+
 .child-grid .left {
   justify-content: left !important;
   padding-left: 10px !important;
+  padding-top: 20px;
 }
+
 .child-grid .left .logo-container {
   border: 1px solid black;
   border-radius: 70%;
@@ -69,13 +81,16 @@
   height: 50px;
   padding-top: 10px;
 }
+
 .home-grid .child-grid .right {
   text-align: left;
   color: #616669;
   padding: 0px;
 }
+
 .home-grid .child-grid .right .heading {
   color: black;
+  margin-top: 20px;
 }
 
 .logo {
@@ -85,10 +100,12 @@
   display: block;
   margin: 0 auto;
 }
+
 .logo:hover,
 .logo:focus {
   transform: scale(1.2);
 }
+
 .child-grid .left .logo-container:hover,
 .child-grid .left .logo-container:focus {
   transform: scale(1.1);
@@ -100,67 +117,83 @@
   padding: 40px;
   width: 100% !important;
 }
+
 @media (max-width: 900px) {
   .technology-tabs {
     width: 50% !important;
     overflow: auto !important;
   }
+
   .home-grid {
     margin-top: 5px !important;
   }
+
   .home-grid .child-grid .left {
     padding-left: 0px !important;
   }
+
   .home-grid .child-grid .left > * {
     margin: 0 auto;
   }
+
   .home-grid .child-grid .right {
     margin-top: -20px;
     text-align: center;
   }
+
   .home-grid .child-grid .right > * {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
+
 @media (max-width: 768px) {
   .technology-menu {
     padding: 0px !important;
     margin-top: 20px;
     flex-direction: column !important;
   }
+
   .technology-tabs {
     width: 100% !important;
   }
+
   .panel {
     margin-top: 10px !important;
     width: 100% !important;
   }
+
   .technology-tabs .MuiTabs-flexContainer {
     flex-direction: row !important;
     flex-wrap: wrap !important;
     padding: 5px !important;
     justify-content: center !important;
   }
+
   .technology-tabs .MuiButtonBase-root {
     width: 180px !important;
     padding: 0px !important;
     align-items: center !important;
   }
+
   .technology-tabs .MuiButtonBase-root.MuiTab-root.Mui-selected {
     padding: 0px !important;
   }
+
   .techbody-child2 {
     padding: 0px !important;
   }
+
   .technology-grid > * {
     margin-right: 0px !important;
   }
 }
+
 @media (max-width: 600px) {
   .home-grid .child-grid {
     width: 100% !important;
     margin-bottom: 30px !important;
   }
+
   .home-grid .child-grid .left {
     display: flex;
     height: 40% !important;
@@ -170,15 +203,22 @@
     padding: 0px !important;
     margin-bottom: 10px !important;
   }
+
   .home-grid .child-grid .right {
     width: 100% !important;
   }
+
   .home-grid .child-grid .right > * {
     padding: 2px !important;
     margin-bottom: 5px;
     margin-top: 5px !important;
   }
+
   .home-grid .child-grid .css-a5rdam-MuiGrid-root > * {
     width: 100% !important;
   }
+}
+
+.css-1mc54h7-MuiGrid-root > .MuiGrid-item {
+  padding-top: 0px !important;
 }

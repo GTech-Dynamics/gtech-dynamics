@@ -7,7 +7,15 @@ const ServiceGrid = () => {
     <Box className="body-child2">
       <Grid container spacing={1} className="grid">
         {items.map((item, index) => (
-          <Grid item sm={12} md={6} lg={4} key={index} className="grid-item">
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            key={index}
+            className="grid-item"
+          >
             <Card className="service-card">
               <CardContent className="service-card-content">
                 {React.cloneElement(item.icon, { style: { fontSize: 70 } })}

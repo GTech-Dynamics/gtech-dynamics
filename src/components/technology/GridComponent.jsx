@@ -3,13 +3,14 @@ const TechnologyGrid = ({ items, home }) => {
   return (
     <Box className="body-child2">
       {home ? (
-        <Grid container spacing={2} className="home-grid">
+        <Grid container rowGap={2} className="home-grid">
           {items.map((item, index) => (
             <Grid item sm={12} md={6} lg={4} key={index} className="child-grid">
-              <Grid container spacing={1}>
+              <Grid container>
                 <Grid item xs={12} sm={12} md={3} key={index} className="left">
                   <Box className="logo-container">{item.logo}</Box>
                 </Grid>
+
                 <Grid item sm={12} md={8} key={index} className="right">
                   <Typography variant="h6" className="heading">
                     <b>{item.heading}</b>
@@ -23,7 +24,7 @@ const TechnologyGrid = ({ items, home }) => {
       ) : (
         <Grid container spacing={2} className="technology-grid">
           {items.map((item, index) => (
-            <Grid item xs={6} sm={6} md={2.5} lg={2.5} key={index}>
+            <Grid item xs={6} sm={2.5} key={index}>
               <Box textAlign="center">
                 <img src={item.logo} alt="Logo" className="logo" />
                 <Typography variant="p">
