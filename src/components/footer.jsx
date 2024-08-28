@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import "../style/footer.css";
+
 const Footer = () => {
   return (
     <Grid
@@ -23,10 +24,11 @@ const Footer = () => {
           />
         </Box>
         <Typography variant="p" className="content">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          At GTech Dynamics, we empower businesses with innovative IT solutions
+          and expert consultancy. Our team delivers tailored strategies to drive
+          efficiency, growth, and success, helping you navigate the
+          ever-changing digital landscape with confidence. Trust us to elevate
+          your business in the digital age.
         </Typography>
       </Grid>
 
@@ -71,8 +73,16 @@ const Footer = () => {
         </NavLink>
       </Grid>
       <Grid item xs={12} className="copyright">
-        <Typography variant="p">
-          Copyright @ GTECH DYNAMICS All Right Reserved | Privacy Policy
+        <Typography variant="p" style={{ display: "inline-flex" }}>
+          Copyright @ GTECH DYNAMICS All Rights Reserved |
+          <NavLink
+            to="/privacy-policy"
+            className="nav-link"
+            target="_blank"
+            style={{ marginLeft: "3px" }}
+          >
+            Privacy Policy
+          </NavLink>
         </Typography>
       </Grid>
     </Grid>

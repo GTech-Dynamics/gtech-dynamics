@@ -7,7 +7,7 @@ function BaseComponent() {
       <Box className="main-body">
         <Box className="body-child1">
           <Typography variant="h4" sx={{ color: "#116dad" }}>
-            Career at Gtech-Dynamics
+            Career at GTech-Dynamics
           </Typography>
           <Typography variant="p" className="hr-lines">
             Jobs

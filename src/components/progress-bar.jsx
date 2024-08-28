@@ -5,7 +5,6 @@ import "../style/progress-bar.css";
 function ProgressBar() {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   useEffect(() => {
-    console.log("scroll percentage", scrollPercentage);
     const handleScroll = () => {
       let windowHeight = window.innerHeight;
       let documentHeight = document.documentElement.scrollHeight;

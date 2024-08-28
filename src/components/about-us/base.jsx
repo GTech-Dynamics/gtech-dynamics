@@ -22,13 +22,15 @@ function AboutBase() {
             <span className="span"> next level.</span>
           </Typography>
           <Typography variant="p" className="description">
-            Code Graphers develops digital solutions to bring every unique and
-            ambitious web and mobile project into virtual reality since 2021. We
-            hook you up with a team of highly skilled developers who can provide
-            you with customized solutions, whether you’re a startup, SaaS
-            company, eCommerce shop, or digital agency. Our team of experts
-            includes UI/UX designers, testers, and project managers that you’ll
-            get to know and trust.
+            Catalyzing Success in the Digital Age: GTech Dynamics is your
+            premier partner for comprehensive IT solutions and consultancy
+            services. With a relentless focus on innovation, we empower
+            businesses to navigate and thrive in today's rapidly evolving
+            technological landscape. Our seasoned experts leverage cutting-edge
+            strategies and tailor-made solutions to drive efficiency, growth,
+            and success. From transformative digital initiatives to strategic
+            consultancy, trust GTech Dynamics to elevate your business to new
+            heights in the digital realm.
           </Typography>
         </Box>
         <Box className="right-child2">

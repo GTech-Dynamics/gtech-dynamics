@@ -19,14 +19,14 @@ function Contact() {
     agree: false,
   });
   useEffect(() => {
-    document.title = "Contact Us - Gtech Dynamics";
+    document.title = "Contact Us - GTech Dynamics";
   }, []);
 
   return (
     <Box className="contact-parent">
       <Box className="main-body">
         <Box className="body-child1">
-          <Typography variant="h4">Gtech Dynamics - Contact Us Page</Typography>
+          <Typography variant="h4">GTech Dynamics - Contact Us Page</Typography>
           <Typography variant="p" className="hr-lines">
             CONTACT US
           </Typography>
@@ -35,7 +35,7 @@ function Contact() {
           </Typography>
           <Box className="inner-child1">
             <Typography>
-              Gtech Dynamics designs tailor-made software solutions and services
+              GTech Dynamics designs tailor-made software solutions and services
               for businesses in all domains. Leave us a message if you have any
               questions related to our services or how we work and we will get
               back to you as soon as possible.

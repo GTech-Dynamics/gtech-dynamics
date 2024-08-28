@@ -4,11 +4,11 @@ import TechnologyGrid from "./GridComponent";
 import TechnologyBase from "./base";
 import { All } from "./GridItems";
 import "../../style/technology.css";
-import bg from "../../static/images/technologybackground.jpg";
+import bg from "../../static/images/technology.jpg";
 function Technology() {
   let subTitle = "Technologies We Utilize";
   let description =
-    "In this modern era, the effectiveness of a software house is intricately tied to the tools and technologies it employs. At Code Graphers, we leverage advanced tools and cutting-edge technologies to craft innovative products that not only fulfill your requirements but also excel in the competitive marketplace.";
+    "In this modern era, the effectiveness of a software house is intricately tied to the tools and technologies it employs. At GTech Dynamics, we leverage advanced tools and cutting-edge technologies to craft innovative products that not only fulfill your requirements but also excel in the competitive marketplace.";
 
   return (
     <>

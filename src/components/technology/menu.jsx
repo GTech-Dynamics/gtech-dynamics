@@ -46,7 +46,6 @@ export default function VerticalTabs() {
   };
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log("small screen", isSmallScreen);
   return (
     <Box className="technology-menu">
       <Tabs
@@ -79,7 +78,7 @@ export default function VerticalTabs() {
           <Typography variant="h5">Backend Development </Typography>
           <Typography variant="p">
             While others simply focus on making a server, application, and
-            database, Code Graphers back-end services result in a product that
+            database, GTech Dynamics back-end services result in a product that
             offers an entertaining yet user-friendly experience, meets market
             needs, and works effortlessly.
           </Typography>
@@ -87,18 +86,19 @@ export default function VerticalTabs() {
         <TabPanel value={value} index={2} className="technology-tabpanel">
           <Typography variant="h5">Mobile App Development </Typography>
           <Typography variant="p">
-            At Code Graphers, we offer wholesome mobile app development services
-            which cover everything from application design to management
-            services. Software experts at Code Graphers are capable and
-            experienced in developing a customized mobile app for your niche,
-            whether it is a customer-oriented or enterprise-class solution.
+            At GTech Dynamics, we offer wholesome mobile app development
+            services which cover everything from application design to
+            management services. Software experts at GTech Dynamics are capable
+            and experienced in developing a customized mobile app for your
+            niche, whether it is a customer-oriented or enterprise-class
+            solution.
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={3} className="technology-tabpanel">
           <Typography variant="h5">Infrastructure</Typography>
           <Typography variant="p">
             Infrastructure services include communication services, networking,
-            data processing, and storage. Code Graphers infrastructure services
+            data processing, and storage. GTech Dynamics infrastructure services
             will help you proactively administer and manage the platforms
             through which you share media, information, and data. Management of
             systems, applications, IoT, user devices, and resilience are also
@@ -117,7 +117,7 @@ export default function VerticalTabs() {
         <TabPanel value={value} index={5} className="technology-tabpanel">
           <Typography variant="h5">Microservices </Typography>
           <Typography variant="p">
-            Developers at Code Graphers are skilled in deriving solutions
+            Developers at GTech Dynamics are skilled in deriving solutions
             according to your demands. Our microservices help develop a
             collection of independent applications instead of a monolithic app.
             We can help structure big and complicated apps with simple programs

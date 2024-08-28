@@ -12,7 +12,7 @@ import "../../style/home.css";
 
 function Home() {
   useEffect(() => {
-    document.title = "Home - Gtech Dynamics";
+    document.title = "Home - GTech Dynamics";
   }, []);
   let techSubTitle = "Technologies We Leverage";
   let techDescription =
