@@ -1,6 +1,7 @@
 .contact-parent {
   margin-top: 100px !important;
 }
+
 .contact-body-child1 {
   margin-top: 120px !important;
   display: flex;
@@ -13,6 +14,7 @@
   font-weight: bold;
   width: 100%;
 }
+
 .contact-body-child1 .inner-child1 {
   width: 100%;
   padding: 3px;
@@ -23,6 +25,7 @@
   flex-direction: column;
   color: black;
 }
+
 .contact-body-child1 .inner-child2 {
   padding: 10px;
   text-align: center;
@@ -32,6 +35,7 @@
   align-items: center;
   width: 50%;
 }
+
 .contact-body-child1 .typography {
   color: black;
   font-weight: bold;
@@ -41,6 +45,7 @@
   padding: 5px !important;
   margin-top: 20px !important;
 }
+
 .contact-body-child2 .contact-grid {
   padding: 5px !important;
   box-sizing: border-box !important;
@@ -48,6 +53,7 @@
   margin-left: 0px !important;
   width: 100% !important;
 }
+
 .contact-grid .child-grid1 {
   margin-top: 40px;
   text-align: left;
@@ -57,6 +63,7 @@
 .child-grid1 .MuiBox-root {
   margin-top: 10px;
 }
+
 .contact-grid .child-grid2 {
   border-radius: 15px;
   color: white;
@@ -64,10 +71,12 @@
   background-color: #e8f4fd;
   animation: floatFromRight 2s ease-in-out !important;
 }
+
 .custom-textfield {
   background-color: white;
   border-radius: 5px;
 }
+
 .form-button {
   background-color: white !important;
   color: #737373 !important;
@@ -81,38 +90,48 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .form-button:hover {
   background: linear-gradient(45deg, #116dad, #1b155e);
   color: white !important;
 }
+
 .css-1vy1emy-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
   color: white !important;
 }
+
 .css-1jo03j2-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
   color: var(--secondary-color) !important;
 }
+
 .css-hwkq3c-MuiInputBase-root-MuiFilledInput-root::after {
   border-bottom: none !important;
 }
+
 .css-10ukbsc-MuiInputBase-root-MuiFilledInput-root::after {
   border-bottom: none !important;
 }
+
 .css-10botns-MuiInputBase-input-MuiFilledInput-input {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
+
 .custom-textfield input:focus::placeholder {
   opacity: 0 !important;
   animation: removePlaceholder 1s forwards !important;
 }
+
 .custom-textfield textarea:focus::placeholder {
   opacity: 0 !important;
   animation: removePlaceholder 1s forwards !important;
 }
+
 .custom-textfield input:not(:focus)::placeholder {
   opacity: 0.6 !important;
   animation: showPlaceholder 1s forwards !important;
 }
+
 .custom-textfield textarea:not(:focus)::placeholder {
   opacity: 0.6 !important;
   animation: showPlaceholder 1s forwards !important;
@@ -135,12 +154,14 @@
     opacity: 1;
   }
 }
+
 @media (max-width: 898px) {
   .contact-body-child2 .child-grid1 {
     margin-bottom: 10px;
     padding-left: 0 !important;
     text-align: center;
   }
+
   .contact-grid .child-grid2 {
     padding: 25px !important;
   }

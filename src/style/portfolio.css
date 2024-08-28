@@ -1,6 +1,7 @@
 .portfolio-tab-parent {
   background-color: white;
 }
+
 .portfolio-tab .MuiTab-root.Mui-selected {
   background-image: linear-gradient(
     to right,
@@ -10,9 +11,11 @@
   color: white;
   font-weight: bold !important;
 }
+
 .portfolio-grid {
   margin-top: 5px !important;
 }
+
 .portfolio-card {
   transform-origin: bottom;
   height: 270px;
@@ -25,6 +28,7 @@
   overflow: hidden;
   border-radius: 20px !important;
 }
+
 .card-content {
   position: absolute;
   bottom: -100%;
@@ -40,32 +44,40 @@
   padding: 10px;
   text-align: start;
 }
+
 .card-content > * {
   margin-bottom: 20px !important;
   color: white !important;
 }
+
 .icon-button {
   background-color: black !important;
   color: white !important;
   margin-left: 7px !important;
 }
+
 .portfolio-card:hover .card-content {
   bottom: 0;
   opacity: 1;
 }
+
 .portfolio-card:hover .card-heading {
   animation: fadeIn 1.5s forwards;
 }
+
 .portfolio-card:hover .card-desc {
   animation: fadeIn 1.5s forwards;
 }
+
 .portfolio-card:hover .icon-button {
   animation: fadeIn 1.5s forwards;
 }
+
 .button-container {
   text-align: center;
   margin-top: 25px !important;
 }
+
 .button-container .css-u03qg1-MuiButtonBase-root-MuiButton-root {
   align-items: center;
   justify-content: center;
@@ -78,28 +90,35 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .button-container .css-u03qg1-MuiButtonBase-root-MuiButton-root:hover {
   background: linear-gradient(45deg, #116dad, #1b155e);
   border: none;
 }
+
 @media (max-width: 768px) {
   .body-child2 {
     padding: 20px;
   }
+
   .body-child2 .MuiTabs-flexContainer {
     flex-wrap: wrap !important;
     padding: 0px;
   }
+
   .portfolio-body-child1 {
     padding: 2px;
   }
+
   .inner-child1 > h3 {
     font-size: 36px !important;
     font-weight: 500 !important;
   }
+
   .inner-child1 > * {
     padding: 10px !important;
   }
+
   .inner-child2 {
     width: 100%;
     padding: 14px !important;

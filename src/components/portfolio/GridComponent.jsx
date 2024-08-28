@@ -9,7 +9,7 @@ const GridComponent = ({ items }) => {
   return (
     <Grid container spacing={2} className="portfolio-grid">
       {items.map((item, index) => (
-        <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
+        <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
           <Card
             className="portfolio-card"
             sx={{ backgroundImage: item.background }}

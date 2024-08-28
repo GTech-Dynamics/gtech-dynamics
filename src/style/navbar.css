@@ -3,20 +3,25 @@
   height: 100px !important;
   background-color: white !important;
 }
+
 .header-logo {
   flex-grow: 1;
 }
+
 .header-logo img {
   margin-left: -12px;
 }
+
 .appbar .css-hyum1k-MuiToolbar-root {
   padding-left: 23px !important;
   padding-right: 30px !important;
 }
+
 .tabs {
   margin-left: auto;
   display: flex;
 }
+
 .tab {
   text-transform: none;
   margin-left: 20px;
@@ -32,30 +37,37 @@
 .tab:active {
   color: var(--secondary-color) !important;
 }
+
 .tabs .Mui-selected {
   color: var(--secondary-color) !important;
 }
+
 .drawer {
   width: 0;
   transition: width 0.5s ease-in-out;
   padding-top: 5px;
 }
+
 .drawer-paper {
   width: 250px;
   box-sizing: border-box;
   color: black !important;
 }
+
 .drawer-open {
   width: 250px;
 }
+
 .drawer-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+
 .drawer-paper .Mui-selected {
   color: var(--secondary-color) !important;
 }
+
 .drawer-close-icon {
   margin-top: 5px;
   margin-right: 5px;
@@ -66,6 +78,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -77,13 +90,16 @@
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   animation: slideInOverlay 1s forwards;
 }
+
 .menu-icon {
   display: none !important;
   padding: 20px !important;
 }
+
 .menu-icon:hover {
   background-color: transparent !important;
 }
+
 .overlay.close {
   animation: slideOutOverlay 2.5s forwards;
 }
@@ -105,10 +121,12 @@
     transform: translateX(100%);
   }
 }
+
 @media (max-width: 900px) {
   .tabs {
     display: none !important;
   }
+
   .menu-icon {
     display: block !important;
   }

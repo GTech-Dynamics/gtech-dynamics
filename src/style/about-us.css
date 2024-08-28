@@ -5,15 +5,18 @@
   margin-top: 100px;
   padding: 65px 55px;
 }
+
 .about-child1 {
   height: auto;
 }
+
 .background {
   position: relative;
   margin-left: 1px;
   background-color: #1b155e !important;
   border-radius: 08px;
 }
+
 .img-container {
   top: -17px;
   left: -18px;
@@ -27,6 +30,7 @@
   border-radius: 8px;
   width: 100%;
 }
+
 .about-child1 .right {
   display: flex;
   flex-direction: column;
@@ -34,15 +38,18 @@
   padding-bottom: 5px;
   padding-right: 40px !important;
 }
+
 .right-child1 {
   display: flex;
   flex-direction: column;
   margin-left: 30px !important;
 }
+
 .right-child1 > * {
   margin-bottom: 5px !important;
   padding: 5px !important;
 }
+
 .title {
   font-family: sans-serif;
   color: #1b155e;
@@ -51,6 +58,7 @@
   letter-spacing: 1px !important;
   max-width: 500px;
 }
+
 .title:after {
   content: " ";
   height: 2px;
@@ -61,6 +69,7 @@
   top: 50%;
   left: 75px;
 }
+
 .subtitle {
   font-size: 40px !important;
   text-transform: capitalize;
@@ -68,13 +77,16 @@
   line-height: 1.3em;
   color: #000;
 }
+
 .span {
   color: #1b155e;
 }
+
 .right-child1 .description {
   line-height: 1.5 !important;
   color: #616669 !important;
 }
+
 .right-child2 {
   padding: 10px;
   margin-top: 50px;
@@ -86,36 +98,44 @@
   padding: 35px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 899px) {
   .about-parent {
     padding: 20px;
   }
+
   .img {
     height: 100%;
   }
+
   .about-child1 {
     margin-top: 20px !important;
     height: auto;
     padding-left: 10px !important;
   }
+
   .background {
     height: 100% !important;
     margin-left: 20px !important;
     width: 95% !important;
     position: relative !important;
   }
+
   .img-container {
     left: -15px;
     width: 100%;
     height: 100%;
     border-radius: 0px 0px 8px 0px !important;
   }
+
   .right-child1 {
     margin-left: 10px !important;
   }
+
   .subtitle {
     font-size: 18px !important;
   }
+
   .right-child2 {
     margin-top: 25px;
     margin-left: 10px !important;
