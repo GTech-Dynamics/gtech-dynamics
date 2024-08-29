@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Grid, Typography, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
@@ -7,14 +7,52 @@ import EmailIcon from "@mui/icons-material/Email";
 import "../style/footer.css";
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "100px",
+        threshold: 0,
+      }
+    );
+    const currentFooterRef = footerRef.current;
+
+    if (currentFooterRef) {
+      observer.observe(currentFooterRef);
+    }
+
+    // Cleanup function
+    return () => {
+      if (currentFooterRef) {
+        observer.unobserve(currentFooterRef);
+      }
+    };
+  }, []);
+
   return (
     <Grid
       container
       justifyContent="center"
       alignItems="center"
-      className="footer"
+      className={`footer ${isVisible ? "animate" : ""}`}
+      ref={footerRef}
     >
-      <Grid item md={5} xs={12} className="sections">
+      <Grid
+        item
+        md={5}
+        xs={12}
+        className={`sections ${isVisible ? "animate" : ""}`}
+      >
         <Box className="footer-logo">
           <img
             src="/logo/android-chrome-192x192.png"
@@ -32,7 +70,12 @@ const Footer = () => {
         </Typography>
       </Grid>
 
-      <Grid item md={4} xs={12} className="section2">
+      <Grid
+        item
+        md={4}
+        xs={12}
+        className={`section2 ${isVisible ? "animate" : ""}`}
+      >
         <Grid container spacing={2}>
           <Grid item>
             <PhoneIcon className="icon" />
@@ -54,7 +97,12 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item md={3} xs={12} className="sections">
+      <Grid
+        item
+        md={3}
+        xs={12}
+        className={`sections ${isVisible ? "animate" : ""}`}
+      >
         <Typography variant="h5">Services</Typography>
         <NavLink to="/services" className="nav-link">
           Services

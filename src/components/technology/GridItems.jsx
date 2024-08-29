@@ -119,6 +119,10 @@ export const FrontendDevelopmentIcons = [
     logo: require("../../static/images/javascript.png"),
     heading: "Javascript",
   },
+  {
+    logo: require("../../static/images/react-native.png"),
+    heading: "React Native",
+  },
 ];
 
 export const BackendDevelopmentIcons = [
