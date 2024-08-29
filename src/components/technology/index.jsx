@@ -3,7 +3,6 @@ import VerticalTabs from "./menu";
 import TechnologyGrid from "./GridComponent";
 import TechnologyBase from "./base";
 import {
-  All,
   FrontendDevelopmentIcons,
   BackendDevelopmentIcons,
   MobileAppDevelopmentIcons,
@@ -13,13 +12,18 @@ import {
 } from "./GridItems";
 import "../../style/technology.css";
 import bg from "../../static/images/technology.jpg";
-import * as React from "react";
+import React, { useEffect } from "react";
 
 function Technology() {
   let subTitle = "Technologies We Utilize";
   let description =
     "In this modern era, the effectiveness of a software house is intricately tied to the tools and technologies it employs. At GTech Dynamics, we leverage advanced tools and cutting-edge technologies to craft innovative products that not only fulfill your requirements but also excel in the competitive marketplace.";
+
   const [value, setValue] = React.useState(0);
+
+  useEffect(() => {
+    document.title = "Technology - GTech Dynamics";
+  }, []);
 
   const items =
     value === 0

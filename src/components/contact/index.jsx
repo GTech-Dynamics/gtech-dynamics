@@ -10,14 +10,6 @@ import {
 import React, { useEffect } from "react";
 import "../../style/contact.css";
 function Contact() {
-  const [formData, setFormData] = React.useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-    agree: false,
-  });
   useEffect(() => {
     document.title = "Contact Us - GTech Dynamics";
   }, []);
