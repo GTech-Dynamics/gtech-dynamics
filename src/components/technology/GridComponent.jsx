@@ -12,7 +12,7 @@ const TechnologyGrid = ({ items, home }) => {
                 </Grid>
 
                 <Grid item sm={12} md={8} key={index} className="right">
-                  <Typography variant="h6" className="heading">
+                  <Typography variant="h6" className="icon-title">
                     <b>{item.heading}</b>
                   </Typography>
                   <Typography varaint="p">{item.description}</Typography>
