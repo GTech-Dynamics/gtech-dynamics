@@ -11,7 +11,7 @@ import {
   MicroservicesIcons,
 } from "./GridItems";
 import "../../style/technology.css";
-import bg from "../../static/images/technology.jpg";
+import bg from "../../static/images/Buisness-Technology.jpg";
 import React, { useEffect } from "react";
 
 function Technology() {
