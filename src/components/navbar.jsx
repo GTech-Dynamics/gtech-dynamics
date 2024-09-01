@@ -60,9 +60,11 @@ export default function NavBar() {
     }
     setTimeout(() => {
       const hireTalentSection = document.getElementById("hireTalentSection");
+
       if (hireTalentSection) {
         const hireTalentSectionTop =
           hireTalentSection.getBoundingClientRect().top;
+
         const scrollToY = hireTalentSectionTop - 100;
         window.scrollTo({ top: scrollToY, behavior: "smooth" });
         if (menuOpen) {

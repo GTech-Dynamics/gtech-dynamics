@@ -2,10 +2,10 @@ import { Box, Typography } from "@mui/material";
 import PortfolioComponent from "./PortfolioComponent";
 import "../../style/portfolio.css";
 import { useEffect } from "react";
-import bg from "../../static/images/portfoliobackground.jpg";
+import bg from "../../static/images/portfolio.jpg";
 function Portfolio() {
   useEffect(() => {
-    document.title = "Portfolio - Gtech Dynamics";
+    document.title = "Portfolio - GTech Dynamics";
   }, []);
   return (
     <>

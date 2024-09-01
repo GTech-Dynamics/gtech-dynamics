@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+}
+
+.heading {
+  padding: 20px;
+}
+
+.sub-heading {
+  padding: 20px;
+}
+
+.description {
+  margin: 16px 24px;
+}
+
+.footer-text {
+  margin: 24px;
+}

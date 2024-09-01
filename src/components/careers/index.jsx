@@ -5,7 +5,7 @@ import BaseComponent from "./base";
 import bg from "../../static/images/careersbackground.jpg";
 function Careers() {
   useEffect(() => {
-    document.title = "Careers - Gtech Dynamics";
+    document.title = "Careers - GTech Dynamics";
   }, []);
   return (
     <>

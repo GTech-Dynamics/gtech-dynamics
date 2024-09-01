@@ -11,22 +11,32 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../src/components/theme";
 import Technology from "./components/technology";
 import Careers from "./components/careers/index";
+
+import WithNavBarFooterLayout from "./components/navLayout";
+import WithoutNavBarFooterLayout from "./components/simpleLayout";
+import PrivacyPolicy from "./components/privacy-policy/index";
+
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <NavBar />
         <Routes>
-          <Route path="" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/technology" element={<Technology />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<Contact />} />
+          <Route element={<WithNavBarFooterLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/technology" element={<Technology />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact-us" element={<Contact />} />
+          </Route>
+
+          {/* Routes without NavBar and Footer */}
+          <Route element={<WithoutNavBarFooterLayout />}>
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          </Route>
         </Routes>
-        <Footer />
       </ThemeProvider>
     </BrowserRouter>
   );

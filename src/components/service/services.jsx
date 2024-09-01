@@ -11,7 +11,7 @@ const ServicesComponent = () => {
         <Typography variant="h3">Services We Provide</Typography>
         <Box className="inner-child1">
           <Typography variant="p">
-            Gtech Dynamics is a client-focused company that focuses on providing
+            GTech Dynamics is a client-focused company that focuses on providing
             the best IT services. Let the professionals handle the heavy work
             for you. Our top priority is to provide industry-leading solutions
             and products adhering to market standards while ensuring only the
