@@ -4,8 +4,6 @@ import Home from "../src/components/home/index";
 import Services from "../src/components/service/index";
 import Portfolio from "../src/components/portfolio/index";
 import Contact from "../src/components/contact/index";
-import NavBar from "../src/components/navbar";
-import Footer from "../src/components/footer";
 import AboutUs from "../src/components/about-us/index";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../src/components/theme";

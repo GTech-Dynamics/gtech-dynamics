@@ -1,12 +1,8 @@
-import { Typography, List, ListItem } from "@mui/material";
+import { Typography } from "@mui/material";
 import "../../style/privacy-policy.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function PrivacyPolicy() {
-  let subTitle = "Privacy Policy for GTech Dynamics";
-  let description =
-    "In this modern era, the effectiveness of a software house is intricately tied to the tools and technologies it employs. At GTech Dynamics, we leverage advanced tools and cutting-edge technologies to craft innovative products that not only fulfill your requirements but also excel in the competitive marketplace.";
-
   return (
     <>
       <div className="container">

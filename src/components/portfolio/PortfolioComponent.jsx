@@ -27,7 +27,7 @@ const PortfolioComponent = (home) => {
     if (!home.home) {
       setShowAllItems(true);
     }
-  }, []);
+  }, [home.home]);
 
   return (
     <>
