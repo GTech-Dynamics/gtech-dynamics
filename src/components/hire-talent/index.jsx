@@ -1,6 +1,8 @@
+import React from "react";
 import { Box, Typography } from "@mui/material";
 import HireTalentGrid from "./grid";
 import "../../style/talent.css";
+
 function Talent() {
   return (
     <Box className="main-body">

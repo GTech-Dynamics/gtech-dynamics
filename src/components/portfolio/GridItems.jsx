@@ -4,6 +4,7 @@ import image3 from "../../static/images/customsoftware.jpg";
 import image4 from "../../static/images/staffaugmentation.jpg";
 import image5 from "../../static/images/qa.webp";
 import image6 from "../../static/images/productmanagement.jpg";
+
 export const All = [
   {
     background: `url(${image1})`,

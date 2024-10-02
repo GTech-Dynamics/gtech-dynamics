@@ -1,12 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import PortfolioComponent from "./PortfolioComponent";
 import "../../style/portfolio.css";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import bg from "../../static/images/portfolio.jpg";
-function Portfolio() {
+
+const Portfolio = () => {
   useEffect(() => {
     document.title = "Portfolio - GTech Dynamics";
   }, []);
+
   return (
     <>
       <Box
@@ -24,6 +26,6 @@ function Portfolio() {
       <PortfolioComponent />
     </>
   );
-}
+};
 
 export default Portfolio;

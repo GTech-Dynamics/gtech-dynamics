@@ -1,12 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import ServicesComponent from "./services";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import "../../style/service.css";
 
-function Service() {
+const Service = () => {
   useEffect(() => {
     document.title = "Services - Gtech Dynamics";
   }, []);
+
   return (
     <>
       <Box className="service-parent">
@@ -26,6 +27,6 @@ function Service() {
       <ServicesComponent />
     </>
   );
-}
+};
 
 export default Service;

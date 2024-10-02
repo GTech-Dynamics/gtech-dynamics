@@ -1,8 +1,9 @@
+import React from "react";
 import { Typography, Box, Card, CardContent, Grid } from "@mui/material";
 import { items } from "./GridItems";
-import React from "react";
 
 const ServiceGrid = () => {
+
   return (
     <Box className="body-child2">
       <Grid container spacing={1} className="grid">
@@ -44,4 +45,5 @@ const ServiceGrid = () => {
     </Box>
   );
 };
+
 export default ServiceGrid;

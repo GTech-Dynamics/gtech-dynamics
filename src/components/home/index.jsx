@@ -2,7 +2,7 @@ import CarouselComponent from "./carousel";
 import ServicesComponent from "../service/services";
 import { Box } from "@mui/material";
 import PortfolioComponent from "../portfolio/PortfolioComponent";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import TechnologyBase from "../technology/base";
 import TechnologyGrid from "../technology/GridComponent";
 import { gridHome } from "../technology/GridItems";
@@ -10,7 +10,7 @@ import Talent from "../hire-talent/index";
 import WorkBase from "../how-we-work";
 import "../../style/home.css";
 
-function Home() {
+const Home =()=> {
   useEffect(() => {
     document.title = "Home - GTech Dynamics";
   }, []);

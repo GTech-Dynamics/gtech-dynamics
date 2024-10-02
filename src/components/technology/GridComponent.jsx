@@ -1,4 +1,6 @@
+import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
+
 const TechnologyGrid = ({ items, home }) => {
   return (
     <Box className="body-child2">

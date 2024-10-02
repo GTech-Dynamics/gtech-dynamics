@@ -1,3 +1,4 @@
+import React from "react";
 import { Typography } from "@mui/material";
 import "../../style/privacy-policy.css";
 import "bootstrap/dist/css/bootstrap.min.css";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./style/global.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "../src/components/home/index";
@@ -14,7 +15,7 @@ import WithNavBarFooterLayout from "./components/navLayout";
 import WithoutNavBarFooterLayout from "./components/simpleLayout";
 import PrivacyPolicy from "./components/privacy-policy/index";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
@@ -38,6 +39,6 @@ function App() {
       </ThemeProvider>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
