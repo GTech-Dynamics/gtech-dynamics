@@ -3,7 +3,6 @@ import "./style/global.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "../src/components/home/index";
 import Services from "../src/components/service/index";
-import Portfolio from "../src/components/portfolio/index";
 import Contact from "../src/components/contact/index";
 import AboutUs from "../src/components/about-us/index";
 import { ThemeProvider } from "@mui/material/styles";

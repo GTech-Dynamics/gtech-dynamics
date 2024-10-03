@@ -1,7 +1,6 @@
 import CarouselComponent from "./carousel";
 import ServicesComponent from "../service/services";
 import { Box } from "@mui/material";
-import PortfolioComponent from "../portfolio/PortfolioComponent";
 import React, { useEffect } from "react";
 import TechnologyBase from "../technology/base";
 import TechnologyGrid from "../technology/GridComponent";
