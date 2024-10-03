@@ -93,6 +93,7 @@
     font-size: 18px !important;
   }
 }
+
 @media (max-width: 500px) {
   .work-parent {
     padding: 5px;
