@@ -30,14 +30,14 @@ export default function NavBar() {
       setActiveTab(1);
     } else if (location.pathname === "/technology") {
       setActiveTab(2);
-    } else if (location.pathname === "/portfolio") {
-      setActiveTab(3);
+      // } else if (location.pathname === "/portfolio") {
+      //   setActiveTab(3);
     } else if (location.pathname === "/careers") {
-      setActiveTab(5);
+      setActiveTab(4);
     } else if (location.pathname === "/about-us") {
-      setActiveTab(6);
+      setActiveTab(5);
     } else if (location.pathname === "/contact-us") {
-      setActiveTab(7);
+      setActiveTab(6);
     }
   }, [location.pathname]);
 
@@ -138,14 +138,14 @@ export default function NavBar() {
               key="technology"
               onClick={scrollToTop}
             />
-            <Tab
+            {/* <Tab
               label="portfolio"
               component={NavLink}
               to="/portfolio"
               className="tab"
               key="portfolio"
               onClick={scrollToTop}
-            />
+            /> */}
             <Tab
               label="Hire Talent"
               className="tab"
@@ -241,7 +241,7 @@ export default function NavBar() {
           }}
           selected={activeTab === 2}
         />
-        <Tab
+        {/* <Tab
           label="portfolio"
           component={NavLink}
           to="/portfolio"
@@ -253,21 +253,33 @@ export default function NavBar() {
             scrollToTop();
           }}
           selected={activeTab === 3}
-        />
+        /> */}
         <Tab
           label="Hire Talent"
           className="tab"
           key="hire talent"
           onClick={() => {
-            setActiveTab(4);
+            setActiveTab(3);
             handleHireTalentClick();
           }}
-          selected={activeTab === 4}
+          selected={activeTab === 3}
         />
         <Tab
           label="careers"
           component={NavLink}
           to="/careers"
+          className="tab"
+          onClick={() => {
+            setActiveTab(4);
+            handleMenuClose();
+            scrollToTop();
+          }}
+          selected={activeTab === 4}
+        />
+        <Tab
+          label="About Us"
+          component={NavLink}
+          to="/about-us"
           className="tab"
           onClick={() => {
             setActiveTab(5);
@@ -277,9 +289,9 @@ export default function NavBar() {
           selected={activeTab === 5}
         />
         <Tab
-          label="About Us"
+          label="Contact Us"
           component={NavLink}
-          to="/about-us"
+          to="/contact-us"
           className="tab"
           onClick={() => {
             setActiveTab(6);
@@ -287,18 +299,6 @@ export default function NavBar() {
             scrollToTop();
           }}
           selected={activeTab === 6}
-        />
-        <Tab
-          label="Contact Us"
-          component={NavLink}
-          to="/contact-us"
-          className="tab"
-          onClick={() => {
-            setActiveTab(7);
-            handleMenuClose();
-            scrollToTop();
-          }}
-          selected={activeTab === 7}
         />
       </Drawer>
     </>

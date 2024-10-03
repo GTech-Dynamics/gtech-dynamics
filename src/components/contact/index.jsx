@@ -7,9 +7,55 @@ import {
   Checkbox,
   FormControlLabel,
 } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../style/contact.css";
+import axios from "axios";
+import { toast } from "react-hot-toast";
+
 function Contact() {
+  const [formLoading, setFormLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormLoading(true);
+
+    const formData = new FormData(e.target);
+    formData.append("access_key", process.env.REACT_APP_WEB3_FORM_ACCESS_KEY);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const myPromise = axios
+      .post("https://api.web3forms.com/submit", json, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      })
+      .then((response) => {
+        console.log("response", response.data.message);
+      })
+      .catch((err) => {
+        if (err.response && err.response.data) {
+          const errors = err.response.data.errors;
+          if (errors) {
+            errors.forEach((error) => {
+              toast.error("Failed: " + error["message"]);
+            });
+          }
+        }
+      })
+      .then(function () {
+        setFormLoading(false);
+      });
+
+    toast.promise(myPromise, {
+      loading: "Loading",
+      success: "Thanks for your submission!",
+      error: "Oops! There was a problem submitting your form",
+    });
+  };
+
   useEffect(() => {
     document.title = "Contact Us - GTech Dynamics";
   }, []);
@@ -40,7 +86,7 @@ function Contact() {
               <Typography variant="h3">Contact Us</Typography>
               <Box>
                 <Typography variant="h5">Phone</Typography>
-                <Typography variant="p">USA Number: +1 564 224 5720</Typography>
+                <Typography variant="p">Number: +92 323 0496310</Typography>
               </Box>
               <Box>
                 <Typography variant="h5">Email</Typography>
@@ -48,7 +94,11 @@ function Contact() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={8} className="child-grid2">
-              <form sx={{ color: "white" }}>
+              <form
+                sx={{ color: "white" }}
+                action="https://formspree.io/f/xzbweknb"
+                onSubmit={handleSubmit}
+              >
                 <Grid container spacing={2}>
                   <Grid item xs={12} sm={6}>
                     <TextField
@@ -56,7 +106,8 @@ function Contact() {
                       placeholder="First Name"
                       name="firstName"
                       className="custom-textfield"
-                      variant="filled"
+                      variant="outlined"
+                      disabled={formLoading}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -65,7 +116,8 @@ function Contact() {
                       placeholder="Last Name"
                       name="lastName"
                       className="custom-textfield"
-                      variant="filled"
+                      variant="outlined"
+                      disabled={formLoading}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -75,7 +127,8 @@ function Contact() {
                       name="email"
                       type="email"
                       className="custom-textfield"
-                      variant="filled"
+                      variant="outlined"
+                      disabled={formLoading}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -84,7 +137,8 @@ function Contact() {
                       placeholder="Subject"
                       name="subject"
                       className="custom-textfield"
-                      variant="filled"
+                      variant="outlined"
+                      disabled={formLoading}
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -95,7 +149,8 @@ function Contact() {
                       placeholder="Message"
                       name="message"
                       className="custom-textfield"
-                      variant="filled"
+                      variant="outlined"
+                      disabled={formLoading}
                     />
                   </Grid>
                   <Grid item xs={12} sx={{ color: "black", textAlign: "left" }}>
@@ -114,6 +169,7 @@ function Contact() {
                   <Button
                     type="submit"
                     variant="contained"
+                    disabled={formLoading}
                     className="form-button"
                   >
                     Send Message

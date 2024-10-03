@@ -82,7 +82,7 @@ const Footer = () => {
           </Grid>
           <Grid item>
             <Typography variant="p" className="content">
-              +92 303 4086984
+              +92 323 0496310
             </Typography>
           </Grid>
         </Grid>
@@ -107,8 +107,8 @@ const Footer = () => {
         <NavLink to="/services" className="nav-link">
           Services
         </NavLink>
-        <NavLink to="/portfolio" className="nav-link">
-          Portfolio
+        <NavLink to="/technology" className="nav-link">
+          Technologies
         </NavLink>
         <Typography variant="h5" className="mt-3">
           Company

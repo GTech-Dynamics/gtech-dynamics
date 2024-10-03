@@ -10,7 +10,7 @@ import Talent from "../hire-talent/index";
 import WorkBase from "../how-we-work";
 import "../../style/home.css";
 
-const Home =()=> {
+const Home = () => {
   useEffect(() => {
     document.title = "Home - GTech Dynamics";
   }, []);
@@ -24,9 +24,9 @@ const Home =()=> {
       <Box className="component-sections">
         <ServicesComponent />
       </Box>
-      <Box>
+      {/* <Box>
         <PortfolioComponent home />
-      </Box>
+      </Box> */}
       <Box className="component-sections">
         <Box className="main-body">
           <TechnologyBase
@@ -44,6 +44,6 @@ const Home =()=> {
       </Box>
     </>
   );
-}
+};
 
 export default Home;

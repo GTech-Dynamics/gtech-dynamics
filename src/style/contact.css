@@ -73,7 +73,7 @@
 }
 
 .custom-textfield {
-  background-color: white;
+  background-color: white !important;
   border-radius: 5px;
 }
 
@@ -141,6 +141,7 @@
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -150,6 +151,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
